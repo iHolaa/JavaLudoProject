@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.main.Add_Player_Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1068.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Picture/Border1.gif" />
+         </image>
+      </ImageView>
+      <Pane layoutX="130.0" layoutY="110.0" prefHeight="386.0" prefWidth="844.0" style="-fx-background-color: black; -fx-background-radius: 15;">
+         <effect>
+            <DropShadow height="226.27" radius="110.2425" spread="0.54" width="216.7" />
+         </effect>
+         <children>
+            <TextField fx:id="username_TextField1" alignment="CENTER" layoutX="14.0" layoutY="70.0" prefHeight="35.0" prefWidth="173.0" promptText="Username">
+               <effect>
+                  <DropShadow color="#08a9ff" spread="0.56" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="password_TextField1" alignment="CENTER" layoutX="14.0" layoutY="120.0" prefHeight="35.0" prefWidth="173.0" promptText="Password">
+               <effect>
+                  <DropShadow color="#08a9ff" spread="0.56" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="add_Button_1" layoutX="58.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#add_Player1" onMouseEntered="#add_Enter1" onMouseExited="#add_Exit1" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #4EFFF7; -fx-background-radius: 15;" text="Add" textFill="#9d1a46">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#fc0000" height="50.0" radius="27.0" spread="0.4" width="60.0" />
+               </effect>
+            </Button>
+            <TextField fx:id="username_TextField2" alignment="CENTER" layoutX="225.0" layoutY="70.0" prefHeight="35.0" prefWidth="173.0" promptText="Username">
+               <effect>
+                  <DropShadow color="#08a9ff" spread="0.56" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="password_TextField2" alignment="CENTER" layoutX="225.0" layoutY="120.0" prefHeight="35.0" prefWidth="173.0" promptText="Password">
+               <effect>
+                  <DropShadow color="#08a9ff" spread="0.56" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="add_Button_2" layoutX="269.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#add_Player2" onMouseEntered="#add_Enter2" onMouseExited="#add_Exit2" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #4EFFF7; -fx-background-radius: 15;" text="Add" textFill="#9d1a46">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#fc0000" height="50.0" radius="27.0" spread="0.4" width="60.0" />
+               </effect>
+            </Button>
+            <Button fx:id="start_Button" layoutX="297.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#start_Game" onMouseEntered="#start_Enter" onMouseExited="#start_Exit" prefHeight="54.0" prefWidth="232.0" style="-fx-background-color: #099215; -fx-background-radius: 15;" text="Start" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#fc0000" height="50.0" radius="27.0" spread="0.4" width="60.0" />
+               </effect>
+            </Button>
+            <Label fx:id="add_label1" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="14.0" layoutY="237.0" prefHeight="29.0" prefWidth="205.0" textFill="RED" />
+            <Label fx:id="add_label2" alignment="TOP_LEFT" layoutX="225.0" layoutY="237.0" prefHeight="29.0" prefWidth="205.0" textFill="RED" />
+            <Text fx:id="player1_Text" fill="#3bb7ff" layoutX="80.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1" />
+            <Text fx:id="player2_Text" fill="#3bb7ff" layoutX="291.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2" />
+            <TextField fx:id="username_TextField3" alignment="CENTER" layoutX="444.0" layoutY="70.0" prefHeight="35.0" prefWidth="173.0" promptText="Username">
+               <effect>
+                  <DropShadow color="#08a9ff" spread="0.56" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="password_TextField3" alignment="CENTER" layoutX="444.0" layoutY="120.0" prefHeight="35.0" prefWidth="173.0" promptText="Password">
+               <effect>
+                  <DropShadow color="#08a9ff" spread="0.56" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="add_Button_3" layoutX="488.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#add_Player3" onMouseEntered="#add_Enter3" onMouseExited="#add_Exit3" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #4EFFF7; -fx-background-radius: 15;" text="Add" textFill="#9d1a46">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#fc0000" height="50.0" radius="27.0" spread="0.4" width="60.0" />
+               </effect>
+            </Button>
+            <Text fx:id="player3_Text" fill="#3bb7ff" layoutX="510.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 3" />
+            <Label fx:id="add_label3" alignment="TOP_LEFT" layoutX="443.0" layoutY="237.0" prefHeight="29.0" prefWidth="205.0" textFill="RED" />
+            <TextField fx:id="username_TextField4" alignment="CENTER" layoutX="657.0" layoutY="70.0" prefHeight="35.0" prefWidth="173.0" promptText="Username">
+               <effect>
+                  <DropShadow color="#08a9ff" spread="0.56" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="password_TextField4" alignment="CENTER" layoutX="657.0" layoutY="120.0" prefHeight="35.0" prefWidth="173.0" promptText="Password">
+               <effect>
+                  <DropShadow color="#08a9ff" spread="0.56" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="add_Button_4" layoutX="701.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#add_Player4" onMouseEntered="#add_Enter4" onMouseExited="#add_Exit4" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: #4EFFF7; -fx-background-radius: 15;" text="Add" textFill="#9d1a46">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#fc0000" height="50.0" radius="27.0" spread="0.4" width="60.0" />
+               </effect>
+            </Button>
+            <Text fx:id="player4_Text" fill="#3bb7ff" layoutX="723.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 4" />
+            <Label fx:id="add_label4" alignment="TOP_LEFT" layoutX="657.0" layoutY="237.0" prefHeight="29.0" prefWidth="205.0" textFill="RED" />
+         </children>
+      </Pane>
+      <Button fx:id="return_Button" layoutX="62.0" layoutY="496.0" mnemonicParsing="false" onMouseClicked="#return_Scene" onMouseEntered="#return_Enter" onMouseExited="#return_Exit" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #090F37; -fx-background-radius: 10;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="RED" />
+         </effect>
+      </Button>
+   </children>
+</Pane>

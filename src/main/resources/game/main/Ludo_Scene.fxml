@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.main.Ludo_Scene_Controller">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #F6ECA6;">
+         <children>
+            <Circle fill="WHITE" layoutX="490.0" layoutY="90.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-42.0" endY="3.9999847412109375" layoutX="493.0" layoutY="86.0" startX="-25.0" startY="4.0" />
+            <Line endX="1.0" endY="367.0" layoutX="950.0" layoutY="400.0" startX="1.0" startY="-360.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="90.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="WHITE" layoutX="550.0" layoutY="90.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-40.0" endY="4.0" layoutX="552.0" layoutY="86.0" startX="-24.0" startY="4.0000152587890625" />
+            <Circle fill="WHITE" layoutX="550.0" layoutY="150.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="580.0" layoutY="109.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="550.0" layoutY="210.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="580.0" layoutY="169.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="550.0" layoutY="270.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="580.0" layoutY="229.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="550.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="580.0" layoutY="289.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="150.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="460.0" layoutY="110.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="210.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="460.0" layoutY="170.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="270.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="460.0" layoutY="230.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="460.0" layoutY="290.0" startX="-30.0" startY="18.0" />
+            <Line endX="-85.0" layoutX="673.0" layoutY="330.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="610.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="733.0" layoutY="330.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="670.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="793.0" layoutY="331.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="730.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="853.0" layoutY="331.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="790.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endY="13.0" layoutX="790.0" layoutY="355.0" startY="-3.0" />
+            <Circle fill="WHITE" layoutX="790.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endY="13.0" layoutX="790.0" layoutY="415.0" startY="-3.0" />
+            <Circle fill="WHITE" layoutX="790.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="WHITE" layoutX="550.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="672.0" layoutY="449.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="610.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="732.0" layoutY="449.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="670.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="792.0" layoutY="450.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="730.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="852.0" layoutY="450.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="550.0" layoutY="510.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="580.0" layoutY="470.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="550.0" layoutY="570.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="580.0" layoutY="530.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="550.0" layoutY="630.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="580.0" layoutY="590.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="550.0" layoutY="690.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="580.0" layoutY="650.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="510.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="460.0" layoutY="471.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="570.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="460.0" layoutY="531.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="630.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="460.0" layoutY="591.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="690.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-30.0" endY="3.0" layoutX="460.0" layoutY="650.0" startX="-30.0" startY="18.0" />
+            <Circle fill="WHITE" layoutX="490.0" layoutY="690.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-42.0" endY="3.9999847412109375" layoutX="493.0" layoutY="687.0" startX="-25.0" startY="4.0" />
+            <Line endX="-46.0" endY="3.0" layoutX="558.0" layoutY="688.0" startX="-30.0" startY="3.0" />
+            <Circle fill="WHITE" layoutX="430.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="WHITE" layoutX="190.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="313.0" layoutY="330.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="250.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="373.0" layoutY="330.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="310.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="433.0" layoutY="331.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="370.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="493.0" layoutY="331.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="190.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="312.0" layoutY="448.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="250.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="372.0" layoutY="448.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="310.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="432.0" layoutY="449.0" startX="-100.0" />
+            <Circle fill="WHITE" layoutX="370.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endX="-85.0" layoutX="492.0" layoutY="449.0" startX="-100.0" />
+            <Line endY="26.0" layoutX="190.0" layoutY="352.0" />
+            <Circle fill="WHITE" layoutX="190.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Line endY="15.0" layoutX="190.0" layoutY="413.0" />
+            <Circle fill="#2dd32d" layoutX="550.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#2dd32d" layoutX="610.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#2dd32d" layoutX="670.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#2dd32d" layoutX="730.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#ff5b5b" layoutX="250.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#ff5b5b" layoutX="310.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#ff5b5b" layoutX="370.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#ff5b5b" layoutX="430.0" layoutY="390.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#ffff70" layoutX="490.0" layoutY="450.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#ffff70" layoutX="490.0" layoutY="510.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#ffff70" layoutX="490.0" layoutY="570.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#ffff70" layoutX="490.0" layoutY="630.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#55b0ff" layoutX="490.0" layoutY="150.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#55b0ff" layoutX="490.0" layoutY="210.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#55b0ff" layoutX="490.0" layoutY="270.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Circle fill="#55b0ff" layoutX="490.0" layoutY="330.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
+               </effect>
+            </Circle>
+            <Polygon fill="RED" layoutX="170.0" layoutY="322.0" points="14.0, 22.0, 27.0, 10.0, 14.0, -2.0" stroke="#444a44" strokeType="INSIDE" />
+            <Polygon fill="GREEN" layoutX="726.0" layoutY="443.0" points="72.0, 21.0, 58.0, 9.0, 72.0, -5.0" stroke="#444a44" strokeType="INSIDE" />
+            <Polygon fill="YELLOW" layoutX="419.0" layoutY="639.0" points="-2.0, 60.0, 10.0, 46.0, 24.0, 60.0" stroke="#444a44" strokeType="INSIDE">
+               <effect>
+                  <DropShadow color="WHITE" />
+               </effect>
+            </Polygon>
+            <Polygon fill="BLUE" layoutX="540.0" layoutY="22.0" points="-1.0, 60.0, 11.0, 75.0, 23.0, 60.0" stroke="#444a44" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="715.0" layoutY="57.0" stroke="#ebcb4a" strokeType="INSIDE" width="150.0">
+               <effect>
+                  <DropShadow color="BLUE" spread="0.5" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="716.0" layoutY="605.0" stroke="#ebcb4a" strokeType="INSIDE" width="150.0">
+               <effect>
+                  <DropShadow color="GREEN" spread="0.5" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="157.0" layoutY="606.0" stroke="#ebcb4a" strokeType="INSIDE" width="150.0">
+               <effect>
+                  <DropShadow color="YELLOW" spread="0.5" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="150.0" layoutX="157.0" layoutY="57.0" stroke="#ebcb4a" strokeType="INSIDE" width="150.0">
+               <effect>
+                  <DropShadow color="RED" spread="0.5" />
+               </effect>
+            </Rectangle>
+            <ImageView fx:id="blue_Player1" fitHeight="50.0" fitWidth="30.0" layoutX="750.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/B1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="blue_Player2" fitHeight="50.0" fitWidth="30.0" layoutX="800.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/B2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="blue_Player3" fitHeight="50.0" fitWidth="30.0" layoutX="750.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/B3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="blue_Player4" fitHeight="50.0" fitWidth="30.0" layoutX="800.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/B4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="green_Player1" fitHeight="50.0" fitWidth="30.0" layoutX="750.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/G1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="green_Player2" fitHeight="50.0" fitWidth="30.0" layoutX="800.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/G2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="green_Player3" fitHeight="50.0" fitWidth="30.0" layoutX="750.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/G3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="green_Player4" fitHeight="50.0" fitWidth="30.0" layoutX="800.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/G4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="red_Player1" fitHeight="50.0" fitWidth="30.0" layoutX="200.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/R1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="red_Player2" fitHeight="50.0" fitWidth="30.0" layoutX="250.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/R2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="red_Player3" fitHeight="50.0" fitWidth="30.0" layoutX="200.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/R3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="red_Player4" fitHeight="50.0" fitWidth="30.0" layoutX="250.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/R4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yellow_Player1" fitHeight="50.0" fitWidth="30.0" layoutX="200.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/Y1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yellow_Player2" fitHeight="50.0" fitWidth="30.0" layoutX="250.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/Y2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yellow_Player3" fitHeight="50.0" fitWidth="30.0" layoutX="200.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/Y3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yellow_Player4" fitHeight="50.0" fitWidth="30.0" layoutX="250.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/Y4.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="date_Label" layoutX="960.0" layoutY="48.0" prefHeight="42.0" prefWidth="310.0" text=" Date :">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="time_Label" layoutX="960.0" layoutY="80.0" prefHeight="42.0" prefWidth="310.0" text=" Time :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="dice_Button" layoutX="1040.0" layoutY="269.0" mnemonicParsing="false" onAction="#dice" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Dice" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font></Button>
+            <ImageView fx:id="dice_Image" fitHeight="90.0" fitWidth="90.0" layoutX="1070.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="30.0" radius="14.5" spread="0.3" width="30.0" />
+               </effect>
+            </ImageView>
+            <TextField fx:id="blue_TextField" alignment="CENTER" editable="false" layoutX="670.0" layoutY="230.0" prefHeight="29.0" prefWidth="140.0" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow color="BLUE" spread="0.3" />
+               </effect>
+            </TextField>
+            <TextField fx:id="green_TextField" alignment="CENTER" editable="false" layoutX="670.0" layoutY="557.0" prefHeight="29.0" prefWidth="140.0" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow color="GREEN" spread="0.3" />
+               </effect>
+            </TextField>
+            <TextField fx:id="red_TextField" alignment="CENTER" editable="false" layoutX="210.0" layoutY="230.0" prefHeight="29.0" prefWidth="140.0" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow color="RED" spread="0.3" />
+               </effect>
+            </TextField>
+            <TextField fx:id="yellow_TextField" alignment="CENTER" editable="false" layoutX="210.0" layoutY="557.0" prefHeight="29.0" prefWidth="140.0" style="-fx-background-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow color="YELLOW" spread="0.3" />
+               </effect>
+            </TextField>
+            <TextField fx:id="turn_TextField" alignment="CENTER" layoutX="1017.0" layoutY="152.0" prefHeight="71.0" prefWidth="197.0" style="-fx-background-color: #ED92FA;" text="Blue Turn">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.49" />
+               </effect>
+            </TextField>
+            <Button fx:id="move_p1" layoutX="1030.0" layoutY="490.0" mnemonicParsing="false" onMouseClicked="#move_Player1" prefHeight="42.0" prefWidth="171.0" style="-fx-background-color: #25E8DC; -fx-background-radius: 15;" text="Move Player 1" textFill="#393333">
+               <font>
+                  <Font name="Russo One" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#361c1c" height="30.0" radius="14.5" spread="0.4" width="30.0" />
+               </effect>
+            </Button>
+            <Button fx:id="move_p2" layoutX="1030.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#move_Player2" prefHeight="42.0" prefWidth="171.0" style="-fx-background-color: #25E8DC; -fx-background-radius: 15;" text="Move Player 2" textFill="#393333">
+               <font>
+                  <Font name="Russo One" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#361c1c" height="30.0" radius="14.5" spread="0.4" width="30.0" />
+               </effect>
+            </Button>
+            <Button fx:id="move_p3" layoutX="1030.0" layoutY="610.0" mnemonicParsing="false" onMouseClicked="#move_Player3" prefHeight="42.0" prefWidth="171.0" style="-fx-background-color: #25E8DC; -fx-background-radius: 15;" text="Move Player 3" textFill="#393333">
+               <font>
+                  <Font name="Russo One" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#361c1c" height="30.0" radius="14.5" spread="0.4" width="30.0" />
+               </effect>
+            </Button>
+            <Button fx:id="move_p4" layoutX="1030.0" layoutY="670.0" mnemonicParsing="false" onMouseClicked="#move_Player4" prefHeight="42.0" prefWidth="171.0" style="-fx-background-color: #25E8DC; -fx-background-radius: 15;" text="Move Player 4" textFill="#393333">
+               <font>
+                  <Font name="Russo One" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#361c1c" height="30.0" radius="14.5" spread="0.4" width="30.0" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

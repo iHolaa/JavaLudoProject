@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.main.SignUp_Page_Controller">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="450.0">
+         <children>
+            <ImageView fitHeight="608.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Picture/SignUp_Page1.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="104.0" layoutY="182.0" prefHeight="43.0" prefWidth="243.0" promptText="Username" style="-fx-background-radius: 15;">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="nameTextField" alignment="CENTER" layoutX="104.0" layoutY="237.0" prefHeight="43.0" prefWidth="243.0" promptText="Name" style="-fx-background-radius: 15;">
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ageTextField" alignment="CENTER" layoutX="104.0" layoutY="291.0" prefHeight="43.0" prefWidth="243.0" promptText="Age" style="-fx-background-radius: 15;">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="passwordTextField" alignment="CENTER" layoutX="104.0" layoutY="345.0" prefHeight="43.0" prefWidth="243.0" promptText="Password" style="-fx-background-radius: 15;">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </TextField>
+            <Text fill="WHITE" layoutX="175.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="23.0" />
+               </font>
+            </Text>
+            <Button fx:id="signUp_Button" layoutX="155.0" layoutY="485.0" mnemonicParsing="false" onMouseClicked="#signUp" onMouseEntered="#signUp_Enter" onMouseExited="#signUp_Exit" prefHeight="35.0" prefWidth="140.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow color="WHITE" />
+               </effect>
+            </Button>
+            <Button fx:id="menu_Button" layoutX="14.0" layoutY="563.0" mnemonicParsing="false" onMouseClicked="#goToMenu" onMouseEntered="#menu_Enter" onMouseExited="#menu_Exit" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #090F37; -fx-background-radius: 10;" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow color="RED" />
+               </effect>
+            </Button>
+            <Label fx:id="error_Label" layoutX="104.0" layoutY="421.0" prefHeight="27.0" prefWidth="243.0" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="successful_Label" layoutX="104.0" layoutY="448.0" prefHeight="27.0" prefWidth="243.0" textFill="#04bf04">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
