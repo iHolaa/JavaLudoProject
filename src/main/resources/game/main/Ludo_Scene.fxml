@@ -13,6 +13,7 @@
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.main.Ludo_Scene_Controller">
    <children>
@@ -24,7 +25,7 @@
                </effect>
             </Circle>
             <Line endX="-42.0" endY="3.9999847412109375" layoutX="493.0" layoutY="86.0" startX="-25.0" startY="4.0" />
-            <Line endX="1.0" endY="367.0" layoutX="950.0" layoutY="400.0" startX="1.0" startY="-360.0" />
+            <Line endX="1.0" endY="367.0" layoutX="941.0" layoutY="396.0" startX="1.0" startY="-360.0" />
             <Circle fill="WHITE" layoutX="430.0" layoutY="90.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
                <effect>
                   <DropShadow blurType="GAUSSIAN" height="7.25" radius="2.0625" width="3.0" />
@@ -367,42 +368,42 @@
                   <DropShadow color="RED" spread="0.5" />
                </effect>
             </Rectangle>
-            <ImageView fx:id="blue_Player1" fitHeight="50.0" fitWidth="30.0" layoutX="750.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="blue_Player1" fitHeight="56.0" fitWidth="30.0" layoutX="750.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/B1.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="blue_Player2" fitHeight="50.0" fitWidth="30.0" layoutX="800.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="blue_Player2" fitHeight="56.0" fitWidth="30.0" layoutX="800.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/B2.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="blue_Player3" fitHeight="50.0" fitWidth="30.0" layoutX="750.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="blue_Player3" fitHeight="56.0" fitWidth="30.0" layoutX="750.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/B3.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="blue_Player4" fitHeight="50.0" fitWidth="30.0" layoutX="800.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="blue_Player4" fitHeight="56.0" fitWidth="30.0" layoutX="800.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/B4.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="green_Player1" fitHeight="50.0" fitWidth="30.0" layoutX="750.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="green_Player1" fitHeight="52.0" fitWidth="30.0" layoutX="750.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/G1.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="green_Player2" fitHeight="50.0" fitWidth="30.0" layoutX="800.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="green_Player2" fitHeight="52.0" fitWidth="30.0" layoutX="800.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/G2.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="green_Player3" fitHeight="50.0" fitWidth="30.0" layoutX="750.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="green_Player3" fitHeight="52.0" fitWidth="30.0" layoutX="750.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/G3.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="green_Player4" fitHeight="50.0" fitWidth="30.0" layoutX="800.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="green_Player4" fitHeight="52.0" fitWidth="30.0" layoutX="800.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/G4.png" />
                </image>
@@ -427,40 +428,40 @@
                   <Image url="@../../Picture/R4.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="yellow_Player1" fitHeight="50.0" fitWidth="30.0" layoutX="200.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="yellow_Player1" fitHeight="54.0" fitWidth="30.0" layoutX="200.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/Y1.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="yellow_Player2" fitHeight="50.0" fitWidth="30.0" layoutX="250.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="yellow_Player2" fitHeight="54.0" fitWidth="30.0" layoutX="250.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/Y2.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="yellow_Player3" fitHeight="50.0" fitWidth="30.0" layoutX="200.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="yellow_Player3" fitHeight="54.0" fitWidth="30.0" layoutX="200.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/Y3.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="yellow_Player4" fitHeight="50.0" fitWidth="30.0" layoutX="250.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="yellow_Player4" fitHeight="54.0" fitWidth="30.0" layoutX="250.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Picture/Y4.png" />
                </image>
             </ImageView>
-            <Label fx:id="date_Label" layoutX="960.0" layoutY="48.0" prefHeight="42.0" prefWidth="310.0" text=" Date :">
+            <Label fx:id="date_Label" layoutX="962.0" layoutY="36.0" prefHeight="42.0" prefWidth="310.0" text=" Date :">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label fx:id="time_Label" layoutX="960.0" layoutY="80.0" prefHeight="42.0" prefWidth="310.0" text=" Time :">
+            <Label fx:id="time_Label" layoutX="961.0" layoutY="69.0" prefHeight="42.0" prefWidth="310.0" text=" Time :">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="dice_Button" layoutX="1040.0" layoutY="269.0" mnemonicParsing="false" onAction="#dice" prefHeight="80.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Dice" textFill="WHITE">
+            <Button fx:id="dice_Button" layoutX="1026.0" layoutY="283.0" mnemonicParsing="false" onAction="#dice" prefHeight="51.0" prefWidth="178.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Dice" textFill="WHITE">
                <font>
                   <Font name="Georgia" size="18.0" />
                </font></Button>
-            <ImageView fx:id="dice_Image" fitHeight="90.0" fitWidth="90.0" layoutX="1070.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="dice_Image" fitHeight="80.0" fitWidth="80.0" layoutX="1076.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
                <effect>
                   <DropShadow height="30.0" radius="14.5" spread="0.3" width="30.0" />
                </effect>
@@ -497,7 +498,7 @@
                   <DropShadow color="YELLOW" spread="0.3" />
                </effect>
             </TextField>
-            <TextField fx:id="turn_TextField" alignment="CENTER" layoutX="1017.0" layoutY="152.0" prefHeight="71.0" prefWidth="197.0" style="-fx-background-color: #ED92FA;" text="Blue Turn">
+            <TextField fx:id="turn_TextField" alignment="CENTER" editable="false" layoutX="1018.0" layoutY="181.0" prefHeight="71.0" prefWidth="197.0" style="-fx-background-color: #ED92FA;">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
@@ -537,6 +538,12 @@
                   <DropShadow color="#361c1c" height="30.0" radius="14.5" spread="0.4" width="30.0" />
                </effect>
             </Button>
+            <Text layoutX="1093.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turn">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Polygon fill="RED" layoutX="1109.0" layoutY="100.0" points="5.0, 62.0, 13.0, 46.0, -1.0, 46.0" stroke="#444a44" strokeType="INSIDE" />
          </children>
       </Pane>
    </children>
