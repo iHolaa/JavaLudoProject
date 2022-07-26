@@ -109,12 +109,13 @@ public class Ludo_Scene_Controller implements Initializable {
         move_p3.setVisible(true);
         move_p4.setVisible(true);
 
+
         roll_nuber = roll_Dice();
         checkFirstSix();
 
         if(roll_nuber == 6){
             number --; // baraye jayze 6
-            checkSix();
+            checkFirstPos();
         }
        System.out.println(roll_nuber);
        if(roll_nuber == 1 ) {
@@ -325,222 +326,162 @@ public class Ludo_Scene_Controller implements Initializable {
         }
     }// turn()
 
-    public void checkSix(){
+    public void checkFirstPos(){
 
-        if(turn_TextField.getText().equals("Blue")){
-            ArrayList<String> b1 = new ArrayList<>();
-            ArrayList<String> b2 = new ArrayList<>();
-            ArrayList<String> b3 = new ArrayList<>();
-            ArrayList<String> b4 = new ArrayList<>();
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Blue_1.txt",b1);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Blue_2.txt",b2);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Blue_3.txt",b3);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Blue_4.txt",b4);
-            if(b1.contains("535,45") ){
-                if(b2.contains("800,80")){
+        if(turn_TextField.getText().equals("Blue")) {
+
+            if (blue_Player1.getLayoutX() == 535 && blue_Player1.getLayoutY() == 45) {
+                if (blue_Player2.getLayoutX() == 800 && blue_Player2.getLayoutY() == 80) {
                     move_p2.setVisible(false);
-                }
-                else if(b3.contains("750,130")){
+                } if (blue_Player3.getLayoutX() == 750 && blue_Player3.getLayoutY() == 130) {
                     move_p3.setVisible(false);
-                }
-                else if(b4.contains("800,130")){
+                } if (blue_Player4.getLayoutX() == 800 && blue_Player4.getLayoutY() == 130) {
                     move_p4.setVisible(false);
                 }
             }// if
-            else if(b2.contains("535,45")){
-                if(b1.contains("750,80")){
+            else if (blue_Player2.getLayoutX() == 535 && blue_Player2.getLayoutY() == 45) {
+                if (blue_Player1.getLayoutX() == 750 && blue_Player1.getLayoutY() == 80) {
                     move_p1.setVisible(false);
-                }
-                else if(b3.contains("750,130")){
+                } if (blue_Player3.getLayoutX() == 750 && blue_Player3.getLayoutY() == 130) {
                     move_p3.setVisible(false);
-                }
-                else if(b4.contains("800,130")){
+                } if (blue_Player4.getLayoutX() == 800 && blue_Player4.getLayoutY() == 130) {
                     move_p4.setVisible(false);
                 }
             }// else if
-            else if(b3.contains("535,45")){
-                if(b1.contains("750,80")){
+           else if (blue_Player3.getLayoutX() == 535 && blue_Player3.getLayoutY() == 45) {
+                if (blue_Player1.getLayoutX() == 750 && blue_Player1.getLayoutY() == 80) {
                     move_p1.setVisible(false);
-                }
-                else if(b2.contains("800,80")){
+                } if (blue_Player2.getLayoutX() == 800 && blue_Player2.getLayoutY() == 80) {
                     move_p2.setVisible(false);
-                }
-                else if(b4.contains("800,130")){
+                } if (blue_Player4.getLayoutX() == 800 && blue_Player4.getLayoutY() == 130) {
                     move_p4.setVisible(false);
                 }
             }// else if
-            else if(b4.contains("535,45")){
-                if(b1.contains("750,80")){
+            else if (blue_Player4.getLayoutX() == 535 && blue_Player4.getLayoutY() == 45) {
+                if (blue_Player1.getLayoutX() == 750 && blue_Player1.getLayoutY() == 80) {
                     move_p1.setVisible(false);
-                }
-                else if(b2.contains("800,80")){
+                } if (blue_Player2.getLayoutX() == 800 && blue_Player2.getLayoutY() == 80) {
                     move_p2.setVisible(false);
-                }
-                else if(b3.contains("750,130")){
+                } if (blue_Player3.getLayoutX() == 750 && blue_Player3.getLayoutY() == 130) {
                     move_p3.setVisible(false);
                 }
             }// else if
-        }
+        }// blue if
         else if(turn_TextField.getText().equals("Red")){
-            ArrayList<String> r1 = new ArrayList<>();
-            ArrayList<String> r2 = new ArrayList<>();
-            ArrayList<String> r3 = new ArrayList<>();
-            ArrayList<String> r4 = new ArrayList<>();
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Red_1.txt",r1);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Red_2.txt",r2);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Red_3.txt",r3);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Red_4.txt",r4);
-            if(r1.contains("175,285")){
-                if(r2.contains("250,80")){
+
+            if (red_Player1.getLayoutX() == 175 && red_Player1.getLayoutY() == 285 ) {
+                if (red_Player2.getLayoutX() == 250 && red_Player2.getLayoutY() == 80 ) {
                     move_p2.setVisible(false);
-                }
-                else if(r3.contains("200,130")){
+                } if (red_Player3.getLayoutX() == 200 && red_Player3.getLayoutY() == 130) {
                     move_p3.setVisible(false);
-                }
-                else if(r4.contains("250,130")){
+                } if (red_Player4.getLayoutX() == 250 && red_Player4.getLayoutY() == 130) {
                     move_p4.setVisible(false);
                 }
             }// if
-            else if(r2.contains("175,285")){
-                if(r1.contains("200,80")){
+            else if (red_Player2.getLayoutX() == 175 && red_Player2.getLayoutY() == 285 ) {
+                if (red_Player1.getLayoutX() == 200 && red_Player1.getLayoutY() == 80 ) {
                     move_p1.setVisible(false);
-                }
-                else if(r3.contains("200,130")){
+                } if (red_Player3.getLayoutX() == 200 && red_Player3.getLayoutY() == 130) {
                     move_p3.setVisible(false);
-                }
-                else if(r4.contains("250,130")){
+                } if (red_Player4.getLayoutX() == 250 && red_Player4.getLayoutY() == 130) {
                     move_p4.setVisible(false);
                 }
             }// else if
-            else if(r3.contains("175,285")){
-                if(r1.contains("200,80")){
+            else if (red_Player3.getLayoutX() == 175 && red_Player3.getLayoutY() == 285 ) {
+                if (red_Player1.getLayoutX() == 200 && red_Player1.getLayoutY() == 80 ) {
                     move_p1.setVisible(false);
-                }
-                else if(r2.contains("250,80")){
+                } if (red_Player2.getLayoutX() == 250 && red_Player2.getLayoutY() == 80 ) {
                     move_p2.setVisible(false);
-                }
-                else if(r4.contains("250,130")){
+                } if (red_Player4.getLayoutX() == 250 && red_Player4.getLayoutY() == 130) {
                     move_p4.setVisible(false);
                 }
             }// else if
-            else if(r4.contains("175,285")){
-                if(r1.contains("200,80")){
+            else if (red_Player4.getLayoutX() == 175 && red_Player4.getLayoutY() == 285 ) {
+                if (red_Player1.getLayoutX() == 200 && red_Player1.getLayoutY() == 80 ) {
                     move_p1.setVisible(false);
-                }
-                else if(r2.contains("250,80")){
+                } if (red_Player2.getLayoutX() == 250 && red_Player2.getLayoutY() == 80 ) {
                     move_p2.setVisible(false);
-                }
-                else if(r3.contains("200,130")){
+                } if (red_Player3.getLayoutX() == 200 && red_Player3.getLayoutY() == 130) {
                     move_p3.setVisible(false);
                 }
             }// else if
         }// red else if
 
         else if(turn_TextField.getText().equals("Green")){
-            ArrayList<String> g1 = new ArrayList<>();
-            ArrayList<String> g2 = new ArrayList<>();
-            ArrayList<String> g3 = new ArrayList<>();
-            ArrayList<String> g4 = new ArrayList<>();
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Green_1.txt",g1);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Green_2.txt",g2);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Green_3.txt",g3);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Green_4.txt",g4);
-            if(g1.contains("775,405")){
-                if(g2.contains("800,630")){
+
+            if (green_Player1.getLayoutX() == 775 && green_Player1.getLayoutY() == 405 ) {
+                if (green_Player2.getLayoutX() == 800 && green_Player2.getLayoutY() == 630 ) {
                     move_p2.setVisible(false);
-                }
-                else if(g3.contains("750,680")){
+                } if (green_Player3.getLayoutX() == 750 && green_Player3.getLayoutY() == 680) {
                     move_p3.setVisible(false);
-                }
-                else if(g4.contains("800,680")){
+                } if (green_Player4.getLayoutX() == 800 && green_Player4.getLayoutY() == 680) {
                     move_p4.setVisible(false);
                 }
             }// if
-            else if(g2.contains("775,405")){
-                if(g1.contains("750,630")){
+            else if (green_Player2.getLayoutX() == 775 && green_Player2.getLayoutY() == 405 ) {
+                if (green_Player1.getLayoutX() == 750 && green_Player1.getLayoutY() == 630 ) {
                     move_p1.setVisible(false);
-                }
-                else if(g3.contains("750,680")){
+                } if (green_Player3.getLayoutX() == 750 && green_Player3.getLayoutY() == 680) {
                     move_p3.setVisible(false);
-                }
-                else if(g4.contains("800,680")){
+                } if (green_Player4.getLayoutX() == 800 && green_Player4.getLayoutY() == 680) {
                     move_p4.setVisible(false);
                 }
             }// else if
-            else if(g3.contains("775,405")){
-                if(g1.contains("750,630")){
+            else if (green_Player3.getLayoutX() == 775 && green_Player3.getLayoutY() == 405 ) {
+                if (green_Player1.getLayoutX() == 750 && green_Player1.getLayoutY() == 630 ) {
                     move_p1.setVisible(false);
-                }
-                else if(g2.contains("800,630")){
+                } if (green_Player2.getLayoutX() == 800 && green_Player2.getLayoutY() == 630 ) {
                     move_p2.setVisible(false);
-                }
-                else if(g4.contains("800,680")){
+                } if (green_Player4.getLayoutX() == 800 && green_Player4.getLayoutY() == 680) {
                     move_p4.setVisible(false);
                 }
             }// else if
-            else if(g4.contains("775,405")){
-                if(g1.contains("750,630")){
+            else if (green_Player4.getLayoutX() == 775 && green_Player4.getLayoutY() == 405 ) {
+                if (green_Player1.getLayoutX() == 750 && green_Player1.getLayoutY() == 630 ) {
                     move_p1.setVisible(false);
-                }
-                else if(g2.contains("800,630")){
+                } if (green_Player2.getLayoutX() == 800 && green_Player2.getLayoutY() == 630 ) {
                     move_p2.setVisible(false);
-                }
-                else if(g3.contains("750,680")){
+                } if (green_Player3.getLayoutX() == 750 && green_Player3.getLayoutY() == 680) {
                     move_p3.setVisible(false);
                 }
             }// else if
         }// green else if
 
         else if(turn_TextField.getText().equals("Yellow")){
-            ArrayList<String> y1 = new ArrayList<>();
-            ArrayList<String> y2 = new ArrayList<>();
-            ArrayList<String> y3 = new ArrayList<>();
-            ArrayList<String> y4 = new ArrayList<>();
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Yellow_1.txt",y1);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Yellow_2.txt",y2);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Yellow_3.txt",y3);
-            fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Yellow_4.txt",y4);
-            if(y1.contains("415,645")){
-                if(y2.contains("250,630")){
+
+            if (yellow_Player1.getLayoutX() == 415 && yellow_Player1.getLayoutY() == 645 ) {
+                if (yellow_Player2.getLayoutX() == 250 && yellow_Player2.getLayoutY() == 630 ) {
                     move_p2.setVisible(false);
-                }
-                else if(y3.contains("200,680")){
+                } if (yellow_Player3.getLayoutX() == 200 && yellow_Player3.getLayoutY() == 680) {
                     move_p3.setVisible(false);
-                }
-                else if(y4.contains("250,680")){
+                } if (yellow_Player4.getLayoutX() == 250 && yellow_Player4.getLayoutY() == 680) {
                     move_p4.setVisible(false);
                 }
             }// if
-            else if(y2.contains("415,645")){
-                if(y1.contains("200,630")){
+            else if (yellow_Player2.getLayoutX() == 415 && yellow_Player2.getLayoutY() == 645 ) {
+                if (yellow_Player1.getLayoutX() == 200 && yellow_Player1.getLayoutY() == 630 ) {
                     move_p1.setVisible(false);
-                }
-                else if(y3.contains("200,680")){
+                } if (yellow_Player3.getLayoutX() == 200 && yellow_Player3.getLayoutY() == 680) {
                     move_p3.setVisible(false);
-                }
-                else if(y4.contains("250,680")){
+                } if (yellow_Player4.getLayoutX() == 250 && yellow_Player4.getLayoutY() == 680) {
                     move_p4.setVisible(false);
                 }
             }// else if
-            else if(y3.contains("415,645")){
-                if(y1.contains("200,630")){
+            else if (yellow_Player3.getLayoutX() == 415 && yellow_Player3.getLayoutY() == 645 ) {
+                if (yellow_Player1.getLayoutX() == 200 && yellow_Player1.getLayoutY() == 630 ) {
                     move_p1.setVisible(false);
-                }
-                else if(y2.contains("250,630")){
+                } if (yellow_Player2.getLayoutX() == 250 && yellow_Player2.getLayoutY() == 630 ) {
                     move_p2.setVisible(false);
-                }
-                else if(y4.contains("250,680")){
+                } if (yellow_Player4.getLayoutX() == 250 && yellow_Player4.getLayoutY() == 680) {
                     move_p4.setVisible(false);
                 }
             }// else if
-            else if(y4.contains("415,645")){
-                if(y1.contains("200,630")){
+            else if (yellow_Player4.getLayoutX() == 415 && yellow_Player4.getLayoutY() == 645 ) {
+                if (yellow_Player1.getLayoutX() == 200 && yellow_Player1.getLayoutY() == 630 ) {
                     move_p1.setVisible(false);
-                }
-                else if(y2.contains("250,630")){
+                } if (yellow_Player2.getLayoutX() == 250 && yellow_Player2.getLayoutY() == 630 ) {
                     move_p2.setVisible(false);
-                }
-                else if(y3.contains("200,680")){
+                } if (yellow_Player3.getLayoutX() == 200 && yellow_Player3.getLayoutY() == 680) {
                     move_p3.setVisible(false);
                 }
             }// else if
