@@ -2,7 +2,7 @@ package game.main;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Game_Methods {
+public class Game_Pos {
     FileManeger2 fileManeger2 = new FileManeger2();
 
     // Players First Position
