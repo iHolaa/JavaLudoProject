@@ -65,7 +65,6 @@ public class Ludo_Scene_Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // Players First Position
         game_pos.firstPos();
-
         // date and time
         timeNow();
 
@@ -118,6 +117,8 @@ public class Ludo_Scene_Controller implements Initializable {
         }
        // System.out.println(roll_number);
 
+        hide_for_Last();
+
         // dice picture
        if(roll_number == 1 ) {
            InputStream stream = new FileInputStream("src\\main\\resources\\Picture\\dice1.png");
@@ -151,7 +152,6 @@ public class Ludo_Scene_Controller implements Initializable {
        }
         dice_Image.setVisible(true);
     }// dice()
-
 
 
     public void move_Player1(){
@@ -556,6 +556,9 @@ public class Ludo_Scene_Controller implements Initializable {
     }// checkSix()
      public void checkScore() {
         game_pos.checkScore();
+
+
+
     }//checkScore()
 
 
@@ -2251,6 +2254,443 @@ public class Ludo_Scene_Controller implements Initializable {
 
     }// safeForYellow()
 
+
+
+    public void hide_for_Last() {
+
+        ArrayList<String>[] blue = new ArrayList[4];
+        blue[0] = new ArrayList<>();// player 1
+        blue[1] = new ArrayList<>();// player 2
+        blue[2] = new ArrayList<>();// player 3
+        blue[3] = new ArrayList<>();// player 4
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Blue_1.txt", blue[0]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Blue_2.txt", blue[1]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Blue_3.txt", blue[2]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Blue_4.txt", blue[3]);
+
+        if (turn_TextField.getText().equals("Blue") && blue[0].contains("475,285")) {
+            move_p1.setVisible(false);
+            if (blue[1].contains("475,225")) {
+                move_p2.setVisible(false);
+                if (blue[2].contains("475,165")) {
+                    move_p3.setVisible(false);
+                } else if (blue[3].contains("475,165")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (blue[2].contains("475,225")) {
+                move_p3.setVisible(false);
+                if (blue[1].contains("475,165")) {
+                    move_p2.setVisible(false);
+                } else if (blue[3].contains("475,165")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (blue[3].contains("475,225")) {
+                move_p4.setVisible(false);
+                if (blue[1].contains("475,165")) {
+                    move_p2.setVisible(false);
+                } else if (blue[2].contains("475,165")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Blue") && blue[1].contains("475,285")) {
+            move_p2.setVisible(false);
+            if (blue[0].contains("475,225")) {
+                move_p1.setVisible(false);
+                if (blue[2].contains("475,165")) {
+                    move_p3.setVisible(false);
+                } else if (blue[3].contains("475,165")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (blue[2].contains("475,225")) {
+                move_p3.setVisible(false);
+                if (blue[0].contains("475,165")) {
+                    move_p1.setVisible(false);
+                } else if (blue[3].contains("475,165")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (blue[3].contains("475,225")) {
+                move_p4.setVisible(false);
+                if (blue[0].contains("475,165")) {
+                    move_p1.setVisible(false);
+                } else if (blue[2].contains("475,165")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Blue") && blue[2].contains("475,285")) {
+            move_p3.setVisible(false);
+            if (blue[0].contains("475,225")) {
+                move_p1.setVisible(false);
+                if (blue[1].contains("475,165")) {
+                    move_p2.setVisible(false);
+                } else if (blue[3].contains("475,165")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (blue[1].contains("475,225")) {
+                move_p2.setVisible(false);
+                if (blue[0].contains("475,165")) {
+                    move_p1.setVisible(false);
+                } else if (blue[3].contains("475,165")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (blue[3].contains("475,225")) {
+                move_p4.setVisible(false);
+                if (blue[0].contains("475,165")) {
+                    move_p1.setVisible(false);
+                } else if (blue[1].contains("475,165")) {
+                    move_p2.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Blue") && blue[3].contains("475,285")) {
+            move_p4.setVisible(false);
+            if (blue[0].contains("475,225")) {
+                move_p1.setVisible(false);
+                if (blue[2].contains("475,165")) {
+                    move_p3.setVisible(false);
+                } else if (blue[1].contains("475,165")) {
+                    move_p2.setVisible(false);
+                }
+            } else if (blue[2].contains("475,225")) {
+                move_p3.setVisible(false);
+                if (blue[0].contains("475,165")) {
+                    move_p1.setVisible(false);
+                } else if (blue[1].contains("475,165")) {
+                    move_p2.setVisible(false);
+                }
+            } else if (blue[1].contains("475,225")) {
+                move_p2.setVisible(false);
+                if (blue[0].contains("475,165")) {
+                    move_p1.setVisible(false);
+                } else if (blue[2].contains("475,165")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        }// else if
+
+        ArrayList<String>[] red = new ArrayList[4];
+        red[0] = new ArrayList<>();// player 1
+        red[1] = new ArrayList<>();// player 2
+        red[2] = new ArrayList<>();// player 3
+        red[3] = new ArrayList<>();// player 4
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Red_1.txt", red[0]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Red_2.txt", red[1]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Red_3.txt", red[2]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Red_4.txt", red[3]);
+
+        if (turn_TextField.getText().equals("Red") && red[0].contains("415,345")) {
+            move_p1.setVisible(false);
+            if (red[1].contains("355,345")) {
+                move_p2.setVisible(false);
+                if (red[2].contains("295,345")) {
+                    move_p3.setVisible(false);
+                } else if (red[3].contains("295,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (red[2].contains("355,345")) {
+                move_p3.setVisible(false);
+                if (red[1].contains("295,345")) {
+                    move_p2.setVisible(false);
+                } else if (red[3].contains("295,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (red[3].contains("355,345")) {
+                move_p4.setVisible(false);
+                if (red[1].contains("295,345")) {
+                    move_p2.setVisible(false);
+                } else if (red[2].contains("295,345")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Red") && red[1].contains("415,345")) {
+            move_p2.setVisible(false);
+            if (red[0].contains("355,345")) {
+                move_p1.setVisible(false);
+                if (red[2].contains("295,345")) {
+                    move_p3.setVisible(false);
+                } else if (red[3].contains("295,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (red[2].contains("355,345")) {
+                move_p3.setVisible(false);
+                if (red[0].contains("295,345")) {
+                    move_p1.setVisible(false);
+                } else if (red[3].contains("295,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (red[3].contains("355,345")) {
+                move_p4.setVisible(false);
+                if (red[0].contains("295,345")) {
+                    move_p1.setVisible(false);
+                } else if (red[2].contains("295,345")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Red") && red[2].contains("415,345")) {
+            move_p3.setVisible(false);
+            if (red[0].contains("355,345")) {
+                move_p1.setVisible(false);
+                if (red[1].contains("295,345")) {
+                    move_p2.setVisible(false);
+                } else if (red[3].contains("295,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (red[1].contains("355,345")) {
+                move_p2.setVisible(false);
+                if (red[0].contains("295,345")) {
+                    move_p1.setVisible(false);
+                } else if (red[3].contains("295,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (red[3].contains("355,345")) {
+                move_p4.setVisible(false);
+                if (red[0].contains("295,345")) {
+                    move_p1.setVisible(false);
+                } else if (red[1].contains("295,345")) {
+                    move_p2.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Red") && red[3].contains("415,345")) {
+            move_p4.setVisible(false);
+            if (red[0].contains("355,345")) {
+                move_p1.setVisible(false);
+                if (red[2].contains("295,345")) {
+                    move_p3.setVisible(false);
+                } else if (red[1].contains("295,345")) {
+                    move_p2.setVisible(false);
+                }
+            } else if (red[2].contains("355,345")) {
+                move_p3.setVisible(false);
+                if (red[0].contains("295,345")) {
+                    move_p1.setVisible(false);
+                } else if (red[1].contains("295,345")) {
+                    move_p2.setVisible(false);
+                }
+            } else if (red[1].contains("355,345")) {
+                move_p2.setVisible(false);
+                if (red[0].contains("295,345")) {
+                    move_p1.setVisible(false);
+                } else if (red[2].contains("295,345")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        }// else if
+
+        ArrayList<String>[] green = new ArrayList[4];
+        green[0] = new ArrayList<>();// player 1
+        green[1] = new ArrayList<>();// player 2
+        green[2] = new ArrayList<>();// player 3
+        green[3] = new ArrayList<>();// player 4
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Green_1.txt", green[0]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Green_2.txt", green[1]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Green_3.txt", green[2]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Green_4.txt", green[3]);
+
+        if (turn_TextField.getText().equals("Green") && green[0].contains("535,345")) {
+            move_p1.setVisible(false);
+            if (green[1].contains("595,345")) {
+                move_p2.setVisible(false);
+                if (green[2].contains("655,345")) {
+                    move_p3.setVisible(false);
+                } else if (green[3].contains("655,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (green[2].contains("595,345")) {
+                move_p3.setVisible(false);
+                if (green[1].contains("655,345")) {
+                    move_p2.setVisible(false);
+                } else if (green[3].contains("655,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (green[3].contains("595,345")) {
+                move_p4.setVisible(false);
+                if (green[1].contains("655,345")) {
+                    move_p2.setVisible(false);
+                } else if (green[2].contains("655,345")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Green") && green[1].contains("535,345")) {
+            move_p2.setVisible(false);
+            if (green[0].contains("595,345")) {
+                move_p1.setVisible(false);
+                if (green[2].contains("655,345")) {
+                    move_p3.setVisible(false);
+                } else if (green[3].contains("655,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (green[2].contains("595,345")) {
+                move_p3.setVisible(false);
+                if (green[0].contains("655,345")) {
+                    move_p1.setVisible(false);
+                } else if (green[3].contains("655,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (green[3].contains("595,345")) {
+                move_p4.setVisible(false);
+                if (green[0].contains("655,345")) {
+                    move_p1.setVisible(false);
+                } else if (green[2].contains("655,345")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Green") && green[2].contains("535,345")) {
+            move_p3.setVisible(false);
+            if (green[0].contains("595,345")) {
+                move_p1.setVisible(false);
+                if (green[1].contains("655,345")) {
+                    move_p2.setVisible(false);
+                } else if (green[3].contains("655,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (green[1].contains("595,345")) {
+                move_p2.setVisible(false);
+                if (green[0].contains("655,345")) {
+                    move_p1.setVisible(false);
+                } else if (green[3].contains("655,345")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (green[3].contains("595,345")) {
+                move_p4.setVisible(false);
+                if (green[0].contains("655,345")) {
+                    move_p1.setVisible(false);
+                } else if (green[1].contains("655,345")) {
+                    move_p2.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Green") && green[3].contains("535,345")) {
+            move_p4.setVisible(false);
+            if (green[0].contains("595,345")) {
+                move_p1.setVisible(false);
+                if (green[2].contains("655,345")) {
+                    move_p3.setVisible(false);
+                } else if (green[1].contains("655,345")) {
+                    move_p2.setVisible(false);
+                }
+            } else if (green[2].contains("595,345")) {
+                move_p3.setVisible(false);
+                if (green[0].contains("655,345")) {
+                    move_p1.setVisible(false);
+                } else if (green[1].contains("655,345")) {
+                    move_p2.setVisible(false);
+                }
+            } else if (green[1].contains("595,345")) {
+                move_p2.setVisible(false);
+                if (green[0].contains("655,345")) {
+                    move_p1.setVisible(false);
+                } else if (green[2].contains("655,345")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        }// else if
+
+        ArrayList<String>[] yellow = new ArrayList[4];
+        yellow[0] = new ArrayList<>();// player 1
+        yellow[1] = new ArrayList<>();// player 2
+        yellow[2] = new ArrayList<>();// player 3
+        yellow[3] = new ArrayList<>();// player 4
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Yellow_1.txt", yellow[0]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Yellow_2.txt", yellow[1]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Yellow_3.txt", yellow[2]);
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Player Positions\\Yellow_4.txt", yellow[3]);
+
+        if (turn_TextField.getText().equals("Yellow") && yellow[0].contains("475,405")) {
+            move_p1.setVisible(false);
+            if (yellow[1].contains("475,465")) {
+                move_p2.setVisible(false);
+                if (yellow[2].contains("475,525")) {
+                    move_p3.setVisible(false);
+                } else if (yellow[3].contains("475,525")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (yellow[2].contains("475,465")) {
+                move_p3.setVisible(false);
+                if (yellow[1].contains("475,525")) {
+                    move_p2.setVisible(false);
+                } else if (yellow[3].contains("475,525")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (yellow[3].contains("475,465")) {
+                move_p4.setVisible(false);
+                if (yellow[1].contains("475,525")) {
+                    move_p2.setVisible(false);
+                } else if (yellow[2].contains("475,525")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Yellow") && yellow[1].contains("475,405")) {
+            move_p2.setVisible(false);
+            if (yellow[0].contains("475,465")) {
+                move_p1.setVisible(false);
+                if (yellow[2].contains("475,525")) {
+                    move_p3.setVisible(false);
+                } else if (yellow[3].contains("475,525")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (yellow[2].contains("475,465")) {
+                move_p3.setVisible(false);
+                if (yellow[0].contains("475,525")) {
+                    move_p1.setVisible(false);
+                } else if (yellow[3].contains("475,525")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (yellow[3].contains("475,465")) {
+                move_p4.setVisible(false);
+                if (yellow[0].contains("475,525")) {
+                    move_p1.setVisible(false);
+                } else if (yellow[2].contains("475,525")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Yellow") && yellow[2].contains("475,405")) {
+            move_p3.setVisible(false);
+            if (yellow[0].contains("475,465")) {
+                move_p1.setVisible(false);
+                if (yellow[1].contains("475,525")) {
+                    move_p2.setVisible(false);
+                } else if (yellow[3].contains("475,525")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (yellow[1].contains("475,465")) {
+                move_p2.setVisible(false);
+                if (yellow[0].contains("475,525")) {
+                    move_p1.setVisible(false);
+                } else if (yellow[3].contains("475,525")) {
+                    move_p4.setVisible(false);
+                }
+            } else if (yellow[3].contains("475,465")) {
+                move_p4.setVisible(false);
+                if (yellow[0].contains("475,525")) {
+                    move_p1.setVisible(false);
+                } else if (yellow[1].contains("475,525")) {
+                    move_p2.setVisible(false);
+                }
+            }
+        } else if (turn_TextField.getText().equals("Yellow") && yellow[3].contains("475,405")) {
+            move_p4.setVisible(false);
+            if (yellow[0].contains("475,465")) {
+                move_p1.setVisible(false);
+                if (yellow[2].contains("475,525")) {
+                    move_p3.setVisible(false);
+                } else if (yellow[1].contains("475,525")) {
+                    move_p2.setVisible(false);
+                }
+            } else if (yellow[2].contains("475,465")) {
+                move_p3.setVisible(false);
+                if (yellow[0].contains("475,525")) {
+                    move_p1.setVisible(false);
+                } else if (yellow[1].contains("475,525")) {
+                    move_p2.setVisible(false);
+                }
+            } else if (yellow[1].contains("475,465")) {
+                move_p2.setVisible(false);
+                if (yellow[0].contains("475,525")) {
+                    move_p1.setVisible(false);
+                } else if (yellow[2].contains("475,525")) {
+                    move_p3.setVisible(false);
+                }
+            }
+        }// else if
+
+    }
 
 
 } // end of class

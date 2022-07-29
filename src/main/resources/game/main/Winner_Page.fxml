@@ -28,7 +28,7 @@
       </ImageView>
       <Label fx:id="winner_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="251.0" prefHeight="49.0" prefWidth="598.0" textFill="#89f1ff">
          <font>
-            <Font name="Bowlby One SC Regular" size="30.0" />
+            <Font name="Calibri Light" size="30.0" />
          </font>
       </Label>
       <Button fx:id="closeButton" layoutX="31.0" layoutY="537.0" onMouseClicked="#Exit_Button" onMouseEntered="#exitEnter" onMouseExited="#exitExit" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #55264F; -fx-background-radius: 15;" text="Exit" textFill="WHITE">
@@ -41,6 +41,14 @@
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font>
+      </Button>
+      <Button fx:id="menu_Button" layoutX="31.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#goToMenu" onMouseEntered="#menu_Enter" onMouseExited="#menu_Exit" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #090F37; -fx-background-radius: 15;" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
       </Button>
    </children>
 </Pane>

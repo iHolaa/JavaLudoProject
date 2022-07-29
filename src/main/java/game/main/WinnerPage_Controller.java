@@ -12,10 +12,11 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class WinnerPage_Controller implements Initializable {
+    Main main = new Main();
     @FXML
     Label winner_Label;
     @FXML
-    Button closeButton;
+    Button closeButton , menu_Button ;
     FileManeger2 fileManeger2 = new FileManeger2();
     ArrayList<String> winner = new ArrayList<>();
     @Override
@@ -23,6 +24,13 @@ public class WinnerPage_Controller implements Initializable {
         fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",winner);
         winner_Label.setText(winner.get(0) + " is Winner ");
     }
+    public void goToMenu() {
+        try {
+            main.changeScene("Wellcome_Page.fxml",450,600);
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+    } //end of goToMenu()
 
     public void Exit_Button(){
         Ludo_Scene_Controller ld = new Ludo_Scene_Controller();
@@ -30,6 +38,14 @@ public class WinnerPage_Controller implements Initializable {
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
         System.exit(0);
+    }
+
+    // Button Enter and Exit Mouse Style
+    public void menu_Enter(){
+        menu_Button.setStyle("-fx-background-radius: 15 ; -fx-background-color: #FF0074");
+    }
+    public void menu_Exit(){
+        menu_Button.setStyle("-fx-background-radius: 15 ; -fx-background-color: #090F37");
     }
     public void exitEnter(){
         closeButton.setStyle("-fx-background-color:black ; -fx-background-radius: 15 ");
