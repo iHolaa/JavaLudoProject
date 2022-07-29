@@ -92,11 +92,11 @@ public class Add_Player_Controller implements Initializable {
                     username_TextField1.setEditable(false);
                     password_TextField1.setEditable(false);
                     add_Button_1.setVisible(false);
-                    add_label1.setText(" Player 1 added Successfully..");
+                    add_label1.setText(" Player 1 has been added Successfully..");
                     break;
                 }// if
                 else {
-                    add_label1.setText(" This Player is already registered ");
+                    add_label1.setText(" This Player has already registered ");
                     break;
                 }
             }// if
@@ -118,16 +118,16 @@ public class Add_Player_Controller implements Initializable {
                     username_TextField2.setEditable(false);
                     password_TextField2.setEditable(false);
                     add_Button_2.setVisible(false);
-                    add_label2.setText(" Player 2 added Successfully..");
+                    add_label2.setText(" Player 2 has been added Successfully..");
                     break;
                 }//if
                 else {
-                    add_label2.setText(" This Player is already registered ");
+                    add_label2.setText(" This Player has already registered ");
                     break;
                 }
             }//if
             else if (!userName.contains(username_TextField2.getText())) {
-                add_label2.setText(" Username is not Exist !! ");
+                add_label2.setText(" Username does not Exist !! ");
             }
             else {
                 add_label2.setText(" Password is Wrong !!");
@@ -144,16 +144,16 @@ public class Add_Player_Controller implements Initializable {
                     username_TextField3.setEditable(false);
                     password_TextField3.setEditable(false);
                     add_Button_3.setVisible(false);
-                    add_label3.setText(" Player 3 added Successfully..");
+                    add_label3.setText(" Player 3 has been added Successfully..");
                     break;
                 }//if
                 else {
-                    add_label3.setText(" This Player is already registered ");
+                    add_label3.setText(" This Player has already registered ");
                     break;
                 }
             }//if
             else if (!userName.contains(username_TextField3.getText())) {
-                add_label3.setText(" Username is not Exist !! ");
+                add_label3.setText(" Username does not Exist !! ");
             }
             else {
                 add_label3.setText(" Password is Wrong !!");
@@ -170,16 +170,16 @@ public class Add_Player_Controller implements Initializable {
                     username_TextField4.setEditable(false);
                     password_TextField4.setEditable(false);
                     add_Button_4.setVisible(false);
-                    add_label4.setText(" Player 4 added Successfully..");
+                    add_label4.setText(" Player 4 has been added Successfully..");
                     break;
                 }//if
                 else {
-                    add_label4.setText(" This Player is already registered ");
+                    add_label4.setText(" This Player has already registered ");
                     break;
                 }
             }//if
             else if (!userName.contains(username_TextField4.getText())) {
-                add_label4.setText(" Username is not Exist !! ");
+                add_label4.setText(" Username does not Exist !! ");
             }
             else {
                 add_label4.setText(" Password is Wrong !!");

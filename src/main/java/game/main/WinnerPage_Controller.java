@@ -22,7 +22,7 @@ public class WinnerPage_Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",winner);
-        winner_Label.setText(winner.get(0) + " is Winner ");
+        winner_Label.setText(winner.get(0) + " wins ");
     }
     public void goToMenu() {
         try {

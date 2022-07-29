@@ -61,19 +61,19 @@ public class SignUp_Page_Controller {
                                 signUp_Button.setVisible(false);
                             }//else
                         }else{
-                            error_Label.setText(" Password must be at least 4 Character...");
+                            error_Label.setText(" Password must contain at least 4 Characters...");
                         }//esle
                     }else{
-                        error_Label.setText(" Age is not Real..");
+                        error_Label.setText(" Invalid Age !!");
                     }//else
                 }catch (Exception ex){
-                    error_Label.setText(" Age input is wrong !!");
+                    error_Label.setText(" Invalid Age !!");
                 }
             }else{
-             error_Label.setText(" Name must be at least 3 Character...");
+             error_Label.setText(" Name must contain at least 3 Characters...");
             }//else
         }else{
-            error_Label.setText(" Username must be at least 4 Character... ");
+            error_Label.setText(" Username must contain at least 4 Characters... ");
         }//else
 
     }// end of SignUp Method

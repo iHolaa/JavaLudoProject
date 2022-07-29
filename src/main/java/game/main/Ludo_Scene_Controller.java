@@ -11,11 +11,8 @@ import javafx.scene.image.ImageView;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -25,8 +22,6 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Ludo_Scene_Controller implements Initializable {
 
-    Main main = new Main();
-    FileManeger1 fileManeger1 = new FileManeger1();
     FileManeger2 fileManeger2 = new FileManeger2();
     Game_Pos game_pos = new Game_Pos();
     protected boolean stop = false ;

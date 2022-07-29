@@ -15,7 +15,7 @@
             <Image url="@../../Picture/SignUp_Page1.jpg" />
          </image>
       </ImageView>
-      <Text fill="#ffe059" layoutX="97.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Number Of Players" wrappingWidth="255.921875">
+      <Text fill="#ffe059" layoutX="78.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select The Number Of Players" wrappingWidth="293.921875">
          <font>
             <Font name="Bowlby One SC Regular" size="17.0" />
          </font>
@@ -31,7 +31,7 @@
             <DropShadow color="RED" />
          </effect>
       </Button>
-      <Button fx:id="play_by2" layoutX="134.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#play_by_2" onMouseEntered="#play2" onMouseExited="#play2_ex" prefHeight="36.0" prefWidth="182.0" style="-fx-background-color: #FEC849; -fx-background-radius: 15;" text="Play by 2" textFill="#a40437">
+      <Button fx:id="play_by2" layoutX="134.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#play_by_2" onMouseEntered="#play2" onMouseExited="#play2_ex" prefHeight="36.0" prefWidth="182.0" style="-fx-background-color: #FEC849; -fx-background-radius: 15;" text="2 Players" textFill="#a40437">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>
@@ -39,7 +39,7 @@
             <DropShadow color="#fc0000" height="50.0" radius="27.0" spread="0.4" width="60.0" />
          </effect>
       </Button>
-      <Button fx:id="play_by3" layoutX="134.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#play_by_3" onMouseEntered="#play3" onMouseExited="#play3_ex" prefHeight="36.0" prefWidth="182.0" style="-fx-background-color: #FEC849; -fx-background-radius: 15;" text="Play by 3" textFill="#a40437">
+      <Button fx:id="play_by3" layoutX="134.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#play_by_3" onMouseEntered="#play3" onMouseExited="#play3_ex" prefHeight="36.0" prefWidth="182.0" style="-fx-background-color: #FEC849; -fx-background-radius: 15;" text="3 Players" textFill="#a40437">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>
@@ -47,7 +47,7 @@
             <DropShadow color="#fc0000" height="50.0" radius="27.0" spread="0.4" width="60.0" />
          </effect>
       </Button>
-      <Button fx:id="play_by4" layoutX="134.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#play_by_4" onMouseEntered="#play4" onMouseExited="#play4_ex" prefHeight="36.0" prefWidth="182.0" style="-fx-background-color: #FEC849; -fx-background-radius: 15;" text="Play by 4" textFill="#a40437">
+      <Button fx:id="play_by4" layoutX="134.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#play_by_4" onMouseEntered="#play4" onMouseExited="#play4_ex" prefHeight="36.0" prefWidth="182.0" style="-fx-background-color: #FEC849; -fx-background-radius: 15;" text="4 Players" textFill="#a40437">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>
