@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #D61A1A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.main.WinnerPage_Controller">
+   <children>
+      <ImageView fitHeight="224.0" fitWidth="264.0" layoutX="288.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Picture/Winner_Cop.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="313.0" fitWidth="384.0" layoutX="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Picture/FireWork.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="313.0" fitWidth="384.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Picture/FireWork.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="winner_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="251.0" prefHeight="49.0" prefWidth="598.0" textFill="#89f1ff">
+         <font>
+            <Font name="Bowlby One SC Regular" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="31.0" layoutY="537.0" onMouseClicked="#Exit_Button" onMouseEntered="#exitEnter" onMouseExited="#exitExit" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #55264F; -fx-background-radius: 15;" text="Exit" textFill="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow color="WHITE" spread="0.16" />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -47,6 +47,9 @@ public class Add_Player_Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        Game_Pos gp = new Game_Pos();
+        gp.delete_LastGame_Files();
+
         fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\Username.txt", userName);
         fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\Password.txt", password);
         fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\GamesPlayed.txt", gamesPlayed);
@@ -222,11 +225,13 @@ public class Add_Player_Controller implements Initializable {
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player2.txt",username_TextField2.getText());
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player3.txt",username_TextField3.getText());
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player4.txt",username_TextField4.getText());
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt","0");
             // save to last game played
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1.txt",username_TextField1.getText());
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2.txt",username_TextField2.getText());
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player3.txt",username_TextField3.getText());
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player4.txt",username_TextField4.getText());
+
             // save Position of Player in File
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",String.valueOf(i));
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",String.valueOf(j));
@@ -248,6 +253,7 @@ public class Add_Player_Controller implements Initializable {
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Player1.txt",username_TextField1.getText());
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Player2.txt",username_TextField2.getText());
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Player3.txt",username_TextField3.getText());
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt","0");
             // save to last game played
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1.txt",username_TextField1.getText());
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2.txt",username_TextField2.getText());
@@ -268,6 +274,7 @@ public class Add_Player_Controller implements Initializable {
             gamesPlayed.set( j , String.valueOf(sum_j));
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Player1.txt",username_TextField1.getText());
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Player2.txt",username_TextField2.getText());
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt","0");
             // save to last game played
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1.txt",username_TextField1.getText());
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2.txt",username_TextField2.getText());

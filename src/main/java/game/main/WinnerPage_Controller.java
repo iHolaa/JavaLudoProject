@@ -1,0 +1,42 @@
+package game.main;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+
+public class WinnerPage_Controller implements Initializable {
+    @FXML
+    Label winner_Label;
+    @FXML
+    Button closeButton;
+    FileManeger2 fileManeger2 = new FileManeger2();
+    ArrayList<String> winner = new ArrayList<>();
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",winner);
+        winner_Label.setText(winner.get(0) + " is Winner ");
+    }
+
+    public void Exit_Button(){
+        Ludo_Scene_Controller ld = new Ludo_Scene_Controller();
+        ld.stop = true ; // baraye stop kardan thread timer
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        stage.close();
+        System.exit(0);
+    }
+    public void exitEnter(){
+        closeButton.setStyle("-fx-background-color:black ; -fx-background-radius: 15 ");
+    }
+    public void exitExit(){
+        closeButton.setStyle("-fx-background-color: #55264F ; -fx-background-radius: 15 ");
+    }
+
+
+}
