@@ -258,6 +258,11 @@ public class Ludo_Scene_Controller implements Initializable {
         }
     }// turn()
 
+    public void checkScore() {
+
+        game_pos.checkScore();
+
+    }//checkScore()
 
     public void moveButtons_Hide(){
         if(turn_TextField.getText().equals("Blue")){
@@ -549,12 +554,8 @@ public class Ludo_Scene_Controller implements Initializable {
         }// yellow else if
 
     }// checkSix()
-     public void checkScore() {
-        game_pos.checkScore();
 
 
-
-    }//checkScore()
 
 
     public void timeNow() {
