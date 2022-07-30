@@ -212,7 +212,7 @@ public class Game_Pos {
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player3_Pos.txt",greenPlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
                 int green_pos = Integer.parseInt(greenPlayer_Pos.get(0));
@@ -259,7 +259,7 @@ public class Game_Pos {
 
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
 
@@ -355,7 +355,7 @@ public class Game_Pos {
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player3_Pos.txt",greenPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player4_Pos.txt",yellowPlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
                 int green_pos = Integer.parseInt(greenPlayer_Pos.get(0));
@@ -405,7 +405,7 @@ public class Game_Pos {
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player3_Pos.txt",greenPlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
                 int green_pos = Integer.parseInt(greenPlayer_Pos.get(0));
@@ -452,7 +452,7 @@ public class Game_Pos {
 
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
 
@@ -547,7 +547,7 @@ public class Game_Pos {
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player3_Pos.txt",greenPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player4_Pos.txt",yellowPlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
                 int green_pos = Integer.parseInt(greenPlayer_Pos.get(0));
@@ -597,7 +597,7 @@ public class Game_Pos {
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player3_Pos.txt",greenPlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
                 int green_pos = Integer.parseInt(greenPlayer_Pos.get(0));
@@ -644,7 +644,7 @@ public class Game_Pos {
 
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
 
@@ -739,7 +739,7 @@ public class Game_Pos {
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player3_Pos.txt",greenPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player4_Pos.txt",yellowPlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
                 int green_pos = Integer.parseInt(greenPlayer_Pos.get(0));
@@ -789,7 +789,7 @@ public class Game_Pos {
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player3_Pos.txt",greenPlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
                 int green_pos = Integer.parseInt(greenPlayer_Pos.get(0));
@@ -836,7 +836,7 @@ public class Game_Pos {
 
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2_Pos.txt",bluePlayer_Pos);
-                // shomare fard sign up shode dar file
+                // shomare shakhs sign up shode dar file
                 int blue_pos = Integer.parseInt(bluePlayer_Pos.get(0));
                 int red_pos = Integer.parseInt(redPlayer_Pos.get(0));
 
