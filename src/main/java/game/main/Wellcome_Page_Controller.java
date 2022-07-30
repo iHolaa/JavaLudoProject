@@ -23,11 +23,18 @@ public class Wellcome_Page_Controller {
         }
     }
     public void Player_Information_Button(){
+
         try {
-            main.changeScene("Ludo_Scene.fxml",1280,800);
-        } catch (IOException e) {
-            e.printStackTrace();
+            main.changeScene("Winner_Page.fxml", 800, 600);
+        }catch (Exception ex){
+            ex.printStackTrace();
         }
+
+   //     try {
+     //       main.changeScene("Ludo_Scene.fxml",1280,800);
+       // } catch (IOException e) {
+         //   e.printStackTrace();
+        // }
     }
     public void SignUp_Button(){
         try {

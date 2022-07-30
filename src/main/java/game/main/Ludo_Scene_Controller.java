@@ -2251,6 +2251,7 @@ public class Ludo_Scene_Controller implements Initializable {
 
 
 
+    // hide move_Button for players in last position
     public void hide_for_Last() {
 
         ArrayList<String>[] blue = new ArrayList[4];
@@ -2271,6 +2272,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (blue[3].contains("475,165")) {
                     move_p4.setVisible(false);
+                } else if(roll_number != 6 &&  blue_Player3.getLayoutX() == 750 && blue_Player4.getLayoutX() == 800){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (blue[2].contains("475,225")) {
                 move_p3.setVisible(false);
@@ -2278,6 +2282,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (blue[3].contains("475,165")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && blue_Player2.getLayoutX() == 800 &&  blue_Player4.getLayoutX() == 800){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (blue[3].contains("475,225")) {
                 move_p4.setVisible(false);
@@ -2285,7 +2292,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (blue[2].contains("475,165")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && blue_Player2.getLayoutX() == 800 && blue_Player3.getLayoutX() == 750 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && blue_Player2.getLayoutX() == 800 && blue_Player3.getLayoutX() == 750 && blue_Player4.getLayoutX() == 800){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Blue") && blue[1].contains("475,285")) {
             move_p2.setVisible(false);
@@ -2295,6 +2308,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (blue[3].contains("475,165")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 &&  blue_Player3.getLayoutX() == 750 && blue_Player4.getLayoutX() == 800){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (blue[2].contains("475,225")) {
                 move_p3.setVisible(false);
@@ -2302,6 +2318,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (blue[3].contains("475,165")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && blue_Player1.getLayoutX() == 750 &&  blue_Player4.getLayoutX() == 800){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (blue[3].contains("475,225")) {
                 move_p4.setVisible(false);
@@ -2309,7 +2328,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (blue[2].contains("475,165")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && blue_Player1.getLayoutX() == 750 && blue_Player3.getLayoutX() == 750 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            } else if(roll_number != 6 && blue_Player1.getLayoutX() == 750 && blue_Player3.getLayoutX() == 750 && blue_Player4.getLayoutX() == 800){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Blue") && blue[2].contains("475,285")) {
             move_p3.setVisible(false);
@@ -2319,6 +2344,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (blue[3].contains("475,165")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && blue_Player2.getLayoutX() == 800 &&  blue_Player4.getLayoutX() == 800){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (blue[1].contains("475,225")) {
                 move_p2.setVisible(false);
@@ -2326,6 +2354,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (blue[3].contains("475,165")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && blue_Player1.getLayoutX() == 750  && blue_Player4.getLayoutX() == 800){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (blue[3].contains("475,225")) {
                 move_p4.setVisible(false);
@@ -2333,7 +2364,14 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (blue[1].contains("475,165")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && blue_Player1.getLayoutX() == 750 && blue_Player2.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }
+            else if(roll_number != 6 && blue_Player2.getLayoutX() == 800 && blue_Player1.getLayoutX() == 750 && blue_Player4.getLayoutX() == 800){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Blue") && blue[3].contains("475,285")) {
             move_p4.setVisible(false);
@@ -2343,6 +2381,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (blue[1].contains("475,165")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && blue_Player2.getLayoutX() == 800 && blue_Player3.getLayoutX() == 750 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (blue[2].contains("475,225")) {
                 move_p3.setVisible(false);
@@ -2350,6 +2391,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (blue[1].contains("475,165")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && blue_Player1.getLayoutX() == 750 && blue_Player2.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (blue[1].contains("475,225")) {
                 move_p2.setVisible(false);
@@ -2357,7 +2401,14 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (blue[2].contains("475,165")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && blue_Player1.getLayoutX() == 750 && blue_Player3.getLayoutX() == 750 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }
+            else if(roll_number != 6 && blue_Player2.getLayoutX() == 800 && blue_Player3.getLayoutX() == 750 && blue_Player1.getLayoutX() == 750){
+                dice_Button.setVisible(true);
+                turn();
             }
         }// else if
 
@@ -2379,6 +2430,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (red[3].contains("295,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && red_Player3.getLayoutX() == 200 && red_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (red[2].contains("355,345")) {
                 move_p3.setVisible(false);
@@ -2386,6 +2440,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (red[3].contains("295,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && red_Player2.getLayoutX() == 250 && red_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (red[3].contains("355,345")) {
                 move_p4.setVisible(false);
@@ -2393,7 +2450,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (red[2].contains("295,345")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && red_Player3.getLayoutX() == 200 && red_Player2.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && red_Player2.getLayoutX() == 250 && red_Player3.getLayoutX() == 200 && red_Player4.getLayoutX() == 250){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Red") && red[1].contains("415,345")) {
             move_p2.setVisible(false);
@@ -2403,6 +2466,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (red[3].contains("295,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && red_Player3.getLayoutX() == 200 && red_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (red[2].contains("355,345")) {
                 move_p3.setVisible(false);
@@ -2410,6 +2476,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (red[3].contains("295,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (red[3].contains("355,345")) {
                 move_p4.setVisible(false);
@@ -2417,7 +2486,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (red[2].contains("295,345")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player3.getLayoutX() == 200 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player3.getLayoutX() == 200 && red_Player4.getLayoutX() == 250){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Red") && red[2].contains("415,345")) {
             move_p3.setVisible(false);
@@ -2427,6 +2502,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (red[3].contains("295,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && red_Player2.getLayoutX() == 250 && red_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (red[1].contains("355,345")) {
                 move_p2.setVisible(false);
@@ -2434,6 +2512,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (red[3].contains("295,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (red[3].contains("355,345")) {
                 move_p4.setVisible(false);
@@ -2441,7 +2522,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (red[1].contains("295,345")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player2.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            } else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player2.getLayoutX() == 250 && red_Player4.getLayoutX() == 250){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Red") && red[3].contains("415,345")) {
             move_p4.setVisible(false);
@@ -2451,6 +2538,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (red[1].contains("295,345")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && red_Player3.getLayoutX() == 200 && red_Player2.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (red[2].contains("355,345")) {
                 move_p3.setVisible(false);
@@ -2458,6 +2548,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (red[1].contains("295,345")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player2.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (red[1].contains("355,345")) {
                 move_p2.setVisible(false);
@@ -2465,7 +2558,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (red[2].contains("295,345")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player3.getLayoutX() == 200 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && red_Player1.getLayoutX() == 200 && red_Player3.getLayoutX() == 200 && red_Player2.getLayoutX() == 250){
+                dice_Button.setVisible(true);
+                turn();
             }
         }// else if
 
@@ -2487,6 +2586,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (green[3].contains("655,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && green_Player3.getLayoutX() == 750 && green_Player4.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (green[2].contains("595,345")) {
                 move_p3.setVisible(false);
@@ -2494,6 +2596,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (green[3].contains("655,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && green_Player2.getLayoutX() == 800 && green_Player4.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (green[3].contains("595,345")) {
                 move_p4.setVisible(false);
@@ -2501,7 +2606,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (green[2].contains("655,345")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && green_Player2.getLayoutX() == 800 && green_Player3.getLayoutX() == 750 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && green_Player2.getLayoutX() == 800 && green_Player3.getLayoutX() == 750 && green_Player4.getLayoutX() == 800){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Green") && green[1].contains("535,345")) {
             move_p2.setVisible(false);
@@ -2511,6 +2622,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (green[3].contains("655,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && green_Player3.getLayoutX() == 750 && green_Player4.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (green[2].contains("595,345")) {
                 move_p3.setVisible(false);
@@ -2518,6 +2632,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (green[3].contains("655,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && green_Player1.getLayoutX() == 750 && green_Player4.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (green[3].contains("595,345")) {
                 move_p4.setVisible(false);
@@ -2525,7 +2642,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (green[2].contains("655,345")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && green_Player1.getLayoutX() == 750 && green_Player3.getLayoutX() == 750 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && green_Player1.getLayoutX() == 750 && green_Player3.getLayoutX() == 750 && green_Player4.getLayoutX() == 800){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Green") && green[2].contains("535,345")) {
             move_p3.setVisible(false);
@@ -2535,6 +2658,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (green[3].contains("655,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && green_Player2.getLayoutX() == 800 && green_Player4.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (green[1].contains("595,345")) {
                 move_p2.setVisible(false);
@@ -2542,6 +2668,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (green[3].contains("655,345")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && green_Player1.getLayoutX() == 750 && green_Player4.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (green[3].contains("595,345")) {
                 move_p4.setVisible(false);
@@ -2549,7 +2678,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (green[1].contains("655,345")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && green_Player1.getLayoutX() == 750 && green_Player2.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && green_Player2.getLayoutX() == 800 && green_Player1.getLayoutX() == 750 && green_Player4.getLayoutX() == 800){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Green") && green[3].contains("535,345")) {
             move_p4.setVisible(false);
@@ -2559,6 +2694,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (green[1].contains("655,345")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && green_Player3.getLayoutX() == 750 && green_Player2.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (green[2].contains("595,345")) {
                 move_p3.setVisible(false);
@@ -2566,6 +2704,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (green[1].contains("655,345")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && green_Player1.getLayoutX() == 750 && green_Player4.getLayoutX() == 800 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (green[1].contains("595,345")) {
                 move_p2.setVisible(false);
@@ -2573,7 +2714,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (green[2].contains("655,345")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && green_Player1.getLayoutX() == 750 && green_Player3.getLayoutX() == 750 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && green_Player2.getLayoutX() == 800 && green_Player3.getLayoutX() == 750 && green_Player1.getLayoutX() == 750){
+                dice_Button.setVisible(true);
+                turn();
             }
         }// else if
 
@@ -2595,6 +2742,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (yellow[3].contains("475,525")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player3.getLayoutX() == 200 && yellow_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (yellow[2].contains("475,465")) {
                 move_p3.setVisible(false);
@@ -2602,6 +2752,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (yellow[3].contains("475,525")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player2.getLayoutX() == 250 && yellow_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (yellow[3].contains("475,465")) {
                 move_p4.setVisible(false);
@@ -2609,7 +2762,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (yellow[2].contains("475,525")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player3.getLayoutX() == 200 && yellow_Player2.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && yellow_Player2.getLayoutX() == 250 && yellow_Player3.getLayoutX() == 200 && yellow_Player4.getLayoutX() == 250){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Yellow") && yellow[1].contains("475,405")) {
             move_p2.setVisible(false);
@@ -2619,6 +2778,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (yellow[3].contains("475,525")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player3.getLayoutX() == 200 && yellow_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (yellow[2].contains("475,465")) {
                 move_p3.setVisible(false);
@@ -2626,6 +2788,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (yellow[3].contains("475,525")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player1.getLayoutX() == 200 && yellow_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (yellow[3].contains("475,465")) {
                 move_p4.setVisible(false);
@@ -2633,7 +2798,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (yellow[2].contains("475,525")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player1.getLayoutX() == 200 && yellow_Player3.getLayoutX() == 200 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && yellow_Player1.getLayoutX() == 200 && yellow_Player3.getLayoutX() == 200 && yellow_Player4.getLayoutX() == 250){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Yellow") && yellow[2].contains("475,405")) {
             move_p3.setVisible(false);
@@ -2643,6 +2814,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p2.setVisible(false);
                 } else if (yellow[3].contains("475,525")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player2.getLayoutX() == 250 && yellow_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (yellow[1].contains("475,465")) {
                 move_p2.setVisible(false);
@@ -2650,6 +2824,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (yellow[3].contains("475,525")) {
                     move_p4.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player1.getLayoutX() == 200 && yellow_Player4.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (yellow[3].contains("475,465")) {
                 move_p4.setVisible(false);
@@ -2657,7 +2834,13 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (yellow[1].contains("475,525")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player1.getLayoutX() == 200 && yellow_Player2.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && yellow_Player2.getLayoutX() == 250 && yellow_Player1.getLayoutX() == 200 && yellow_Player4.getLayoutX() == 250){
+                dice_Button.setVisible(true);
+                turn();
             }
         } else if (turn_TextField.getText().equals("Yellow") && yellow[3].contains("475,405")) {
             move_p4.setVisible(false);
@@ -2667,6 +2850,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p3.setVisible(false);
                 } else if (yellow[1].contains("475,525")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player3.getLayoutX() == 200 && yellow_Player2.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (yellow[2].contains("475,465")) {
                 move_p3.setVisible(false);
@@ -2674,6 +2860,9 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (yellow[1].contains("475,525")) {
                     move_p2.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player1.getLayoutX() == 200 && yellow_Player2.getLayoutX() == 250 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
             } else if (yellow[1].contains("475,465")) {
                 move_p2.setVisible(false);
@@ -2681,11 +2870,17 @@ public class Ludo_Scene_Controller implements Initializable {
                     move_p1.setVisible(false);
                 } else if (yellow[2].contains("475,525")) {
                     move_p3.setVisible(false);
+                }else if(roll_number != 6 && yellow_Player1.getLayoutX() == 200 && yellow_Player3.getLayoutX() == 200 ){
+                    dice_Button.setVisible(true);
+                    turn();
                 }
+            }else if(roll_number != 6 && yellow_Player2.getLayoutX() == 250 && yellow_Player3.getLayoutX() == 200 && yellow_Player1.getLayoutX() == 200){
+                dice_Button.setVisible(true);
+                turn();
             }
         }// else if
 
-    }
+    }// hide move_Button for players in last position
 
 
 } // end of class

@@ -42,13 +42,13 @@ public class WinnerPage_Controller implements Initializable {
 
     // Button Enter and Exit Mouse Style
     public void menu_Enter(){
-        menu_Button.setStyle("-fx-background-radius: 15 ; -fx-background-color: #FF0074");
+        menu_Button.setStyle("-fx-background-radius: 15 ; -fx-background-color: #5384BD ");
     }
     public void menu_Exit(){
         menu_Button.setStyle("-fx-background-radius: 15 ; -fx-background-color: #090F37");
     }
     public void exitEnter(){
-        closeButton.setStyle("-fx-background-color:black ; -fx-background-radius: 15 ");
+        closeButton.setStyle("-fx-background-color: #AC0096 ; -fx-background-radius: 15 ");
     }
     public void exitExit(){
         closeButton.setStyle("-fx-background-color: #55264F ; -fx-background-radius: 15 ");

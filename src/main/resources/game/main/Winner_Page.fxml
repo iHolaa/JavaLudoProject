@@ -26,9 +26,9 @@
             <Image url="@../../Picture/FireWork.gif" />
          </image>
       </ImageView>
-      <Label fx:id="winner_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="251.0" prefHeight="49.0" prefWidth="598.0" textFill="#89f1ff">
+      <Label fx:id="winner_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="101.0" layoutY="257.0" prefHeight="49.0" prefWidth="598.0" textFill="#89f1ff">
          <font>
-            <Font name="Calibri Light" size="30.0" />
+            <Font name="Calibri Light Italic" size="50.0" />
          </font>
       </Label>
       <Button fx:id="closeButton" layoutX="31.0" layoutY="537.0" onMouseClicked="#Exit_Button" onMouseEntered="#exitEnter" onMouseExited="#exitExit" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #55264F; -fx-background-radius: 15;" text="Exit" textFill="WHITE">
