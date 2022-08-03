@@ -20,22 +20,22 @@
                   <Image url="@../../Picture/SignUp_Page1.jpg" />
                </image>
             </ImageView>
-            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="104.0" layoutY="182.0" prefHeight="43.0" prefWidth="243.0" promptText="Username" style="-fx-background-radius: 15;">
+            <TextField fx:id="usernameTextField" alignment="CENTER" focusTraversable="false" layoutX="104.0" layoutY="182.0" prefHeight="43.0" prefWidth="243.0" promptText="Username" style="-fx-background-radius: 15;">
                <font>
                   <Font name="Book Antiqua Bold" size="19.0" />
                </font>
             </TextField>
-            <TextField fx:id="nameTextField" alignment="CENTER" layoutX="104.0" layoutY="237.0" prefHeight="43.0" prefWidth="243.0" promptText="Name" style="-fx-background-radius: 15;">
+            <TextField fx:id="nameTextField" alignment="CENTER" focusTraversable="false" layoutX="104.0" layoutY="237.0" prefHeight="43.0" prefWidth="243.0" promptText="Name" style="-fx-background-radius: 15;">
                <font>
                   <Font name="Book Antiqua Bold" size="18.0" />
                </font>
             </TextField>
-            <TextField fx:id="ageTextField" alignment="CENTER" layoutX="104.0" layoutY="291.0" prefHeight="43.0" prefWidth="243.0" promptText="Age" style="-fx-background-radius: 15;">
+            <TextField fx:id="ageTextField" alignment="CENTER" focusTraversable="false" layoutX="104.0" layoutY="291.0" prefHeight="43.0" prefWidth="243.0" promptText="Age" style="-fx-background-radius: 15;">
                <font>
                   <Font name="Book Antiqua Bold" size="19.0" />
                </font>
             </TextField>
-            <TextField fx:id="passwordTextField" alignment="CENTER" layoutX="104.0" layoutY="345.0" prefHeight="43.0" prefWidth="243.0" promptText="Password" style="-fx-background-radius: 15;">
+            <TextField fx:id="passwordTextField" alignment="CENTER" focusTraversable="false" layoutX="104.0" layoutY="345.0" prefHeight="43.0" prefWidth="243.0" promptText="Password" style="-fx-background-radius: 15;">
                <font>
                   <Font name="Book Antiqua Bold" size="19.0" />
                </font>

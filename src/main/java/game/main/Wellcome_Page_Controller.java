@@ -25,7 +25,7 @@ public class Wellcome_Page_Controller {
     public void Player_Information_Button(){
 
         try {
-            main.changeScene("Winner_Page.fxml", 800, 600);
+            main.changeScene("Player_Information.fxml", 450,600 );
         }catch (Exception ex){
             ex.printStackTrace();
         }
