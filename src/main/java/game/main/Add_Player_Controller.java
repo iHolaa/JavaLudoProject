@@ -225,7 +225,7 @@ public class Add_Player_Controller implements Initializable {
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player2.txt",username_TextField2.getText());
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player3.txt",username_TextField3.getText());
             fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player4.txt",username_TextField4.getText());
-            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt","0");
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt","Unfinished");
             // save to last game played
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1.txt",username_TextField1.getText());
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2.txt",username_TextField2.getText());
@@ -250,10 +250,11 @@ public class Add_Player_Controller implements Initializable {
             gamesPlayed.set( j , String.valueOf(sum_j));
             gamesPlayed.set( k , String.valueOf(sum_k));
 
-            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Player1.txt",username_TextField1.getText());
-            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Player2.txt",username_TextField2.getText());
-            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Player3.txt",username_TextField3.getText());
-            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt","0");
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player1.txt",username_TextField1.getText());
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player2.txt",username_TextField2.getText());
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player3.txt",username_TextField3.getText());
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player4.txt"," - ");
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt","Unfinished");
             // save to last game played
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1.txt",username_TextField1.getText());
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2.txt",username_TextField2.getText());
@@ -272,9 +273,11 @@ public class Add_Player_Controller implements Initializable {
             sum_j = Integer.parseInt(gamesPlayed.get(j)) + 1 ;
             gamesPlayed.set( i , String.valueOf(sum_i));
             gamesPlayed.set( j , String.valueOf(sum_j));
-            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Player1.txt",username_TextField1.getText());
-            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Player2.txt",username_TextField2.getText());
-            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt","0");
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player1.txt",username_TextField1.getText());
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player2.txt",username_TextField2.getText());
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player3.txt"," - ");
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Player4.txt"," - ");
+            fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt","Unfinished");
             // save to last game played
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1.txt",username_TextField1.getText());
             fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Player2.txt",username_TextField2.getText());

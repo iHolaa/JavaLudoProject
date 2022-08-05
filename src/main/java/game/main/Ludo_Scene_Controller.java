@@ -19,9 +19,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Ludo_Scene_Controller implements Initializable {
 
+    FileManeger1 fileManeger1 = new FileManeger1();
     FileManeger2 fileManeger2 = new FileManeger2();
     Game_Pos game_pos = new Game_Pos();
     protected boolean stop = false ;
@@ -47,6 +49,7 @@ public class Ludo_Scene_Controller implements Initializable {
     int roll_number ;
     int number = 0;
     int count = 0 ;
+    boolean time_Check = true ;
 
 
     ArrayList<String> numberOfPlayers = new ArrayList<>();
@@ -90,8 +93,9 @@ public class Ludo_Scene_Controller implements Initializable {
             red_TextField.setText(player1.get(0));blue_TextField.setText(player2.get(0));
             green_TextField.setText(player3.get(0));yellow_TextField.setText(player4.get(0));
         }
-        turn_TextField.setText("Red");
 
+
+        turn_TextField.setText("Red");
 
     }// initialize()
 
@@ -146,6 +150,13 @@ public class Ludo_Scene_Controller implements Initializable {
            dice_Image.setImage(image);
        }
         dice_Image.setVisible(true);
+
+       if(time_Check == true){
+           //save date & time to file
+           fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Date.txt",date_Label.getText() + "    " + time_Label.getText());
+           time_Check = false ;
+       }
+
     }// dice()
 
 

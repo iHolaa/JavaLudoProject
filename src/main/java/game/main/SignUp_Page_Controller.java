@@ -23,7 +23,7 @@ public class SignUp_Page_Controller {
     @FXML
     public void signUp() {
 
-        if(usernameTextField.getText().length() >=4 ){
+        if(usernameTextField.getText().trim().length() >=4 ){
             if(nameTextField.getText().length() >=3 ){
                 try {
                     int age1 = Integer.parseInt(ageTextField.getText());

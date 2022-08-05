@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -19,7 +20,9 @@ public class PlayerInformation_Controller implements Initializable {
     @FXML
     Label successful_Label ,error_Label;
     @FXML
-    TextField usernameTextField , passwordTextField;
+    TextField usernameTextField ;
+    @FXML
+    PasswordField passwordTextField ;
     int i = 0 ;
     ArrayList<String> username = new ArrayList<>();
     ArrayList<String> password = new ArrayList<>();

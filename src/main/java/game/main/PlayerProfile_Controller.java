@@ -105,16 +105,22 @@ public class PlayerProfile_Controller implements Initializable {
             error_Label.setText(" Name must contain at least 3 Characters...");
         }//else
     }// save()
-    public void games_Info(){
 
-    }
+    public void games_Info(){
+           try {
+               main.changeScene("RecentGames.fxml",1000,650);
+           }catch (Exception ex){
+               ex.printStackTrace();
+           }
+    }//games_Info()
+
     public void sign_out(){
         try {
             main.changeScene("Player_Information.fxml",450,600);
         }catch (Exception ex){
             ex.printStackTrace();
         }
-    }
+    }// sign_out()
 
     public void edit_Enter(){
         edit_Button.setStyle("-fx-background-radius: 15 ; -fx-background-color: #FF0000");

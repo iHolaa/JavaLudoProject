@@ -448,11 +448,11 @@
                   <Image url="@../../Picture/Y4.png" />
                </image>
             </ImageView>
-            <Label fx:id="date_Label" layoutX="962.0" layoutY="36.0" prefHeight="42.0" prefWidth="310.0" text=" Date :">
+            <Label fx:id="date_Label" layoutX="962.0" layoutY="36.0" prefHeight="42.0" prefWidth="310.0">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label fx:id="time_Label" layoutX="961.0" layoutY="69.0" prefHeight="42.0" prefWidth="310.0" text=" Time :">
+            <Label fx:id="time_Label" layoutX="961.0" layoutY="69.0" prefHeight="42.0" prefWidth="310.0">
                <font>
                   <Font size="18.0" />
                </font>

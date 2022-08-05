@@ -156,6 +156,7 @@ public class Game_Pos {
 
             fileManeger2.FileReader("src\\main\\resources\\Files\\Number Of Players\\Number_Of_Players.txt",numberOfPlayers);
 
+            // 4 nafare
             if(numberOfPlayers.contains("4")){
 
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
@@ -207,6 +208,7 @@ public class Game_Pos {
                     ex.printStackTrace();
                 }
             }
+            // 3 nafare
             else if (numberOfPlayers.contains("3")){
 
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
@@ -233,12 +235,12 @@ public class Game_Pos {
                 score_File.set(red_pos, String.valueOf(red_Score));
                 score_File.set(green_pos, String.valueOf(green_Score));
                 // save winner name
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\3 Player\\Player2.txt",username);
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt",winner);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Player2.txt",username);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt",winner);
                 winner.set( username.size() - 1  , username.get(username.size() - 1) );
                 try {
                     Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\SignUp\\Score.txt"));
-                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt"));
+                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt"));
                 }catch (IOException ex ){
                     ex.printStackTrace();
                 }
@@ -246,7 +248,7 @@ public class Game_Pos {
                     fileManeger1.FileWriter("src\\main\\resources\\Files\\SignUp\\Score.txt", score_File.get(i));
                 }
                 for (int i = 0; i < winner.size(); i++) {
-                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt", winner.get(i));
+                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt", winner.get(i));
                 }
                 fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",username.get(username.size() - 1));
                 try {
@@ -255,6 +257,7 @@ public class Game_Pos {
                     ex.printStackTrace();
                 }
             }
+            // 2 nafare
             else if (numberOfPlayers.contains("2")){
 
                 fileManeger2.FileReader("src\\main\\resources\\Files\\All Games\\Last_Game\\Player1_Pos.txt",redPlayer_Pos);
@@ -277,12 +280,12 @@ public class Game_Pos {
                 score_File.set(red_pos, String.valueOf(red_Score));
 
                 // save winner name
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\2 Player\\Player2.txt",username);
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt",winner);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Player2.txt",username);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt",winner);
                 winner.set( username.size() - 1 , username.get( username.size() - 1 ) );
                 try {
                     Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\SignUp\\Score.txt"));
-                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt"));
+                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt"));
                 }catch (IOException ex ){
                     ex.printStackTrace();
                 }
@@ -290,7 +293,7 @@ public class Game_Pos {
                     fileManeger1.FileWriter("src\\main\\resources\\Files\\SignUp\\Score.txt", score_File.get(i));
                 }
                 for (int i = 0; i < winner.size(); i++) {
-                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt", winner.get(i));
+                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt", winner.get(i));
                 }
                 fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",username.get(username.size() - 1));
                 try {
@@ -426,12 +429,12 @@ public class Game_Pos {
                 score_File.set(red_pos, String.valueOf(red_Score));
                 score_File.set(green_pos, String.valueOf(green_Score));
                 // save winner name
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\3 Player\\Player1.txt",username);
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt",winner);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Player1.txt",username);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt",winner);
                 winner.set( username.size() - 1  , username.get(username.size() - 1) );
                 try {
                     Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\SignUp\\Score.txt"));
-                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt"));
+                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt"));
                 }catch (IOException ex ){
                     ex.printStackTrace();
                 }
@@ -439,7 +442,7 @@ public class Game_Pos {
                     fileManeger1.FileWriter("src\\main\\resources\\Files\\SignUp\\Score.txt", score_File.get(i));
                 }
                 for (int i = 0; i < winner.size(); i++) {
-                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt", winner.get(i));
+                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt", winner.get(i));
                 }
                 fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",username.get(username.size() - 1));
                 try {
@@ -470,12 +473,12 @@ public class Game_Pos {
                 score_File.set(red_pos, String.valueOf(red_Score));
 
                 // save winner name
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\2 Player\\Player1.txt",username);
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt",winner);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Player1.txt",username);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt",winner);
                 winner.set( username.size() - 1 , username.get( username.size() - 1 ) );
                 try {
                     Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\SignUp\\Score.txt"));
-                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt"));
+                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt"));
                 }catch (IOException ex ){
                     ex.printStackTrace();
                 }
@@ -483,7 +486,7 @@ public class Game_Pos {
                     fileManeger1.FileWriter("src\\main\\resources\\Files\\SignUp\\Score.txt", score_File.get(i));
                 }
                 for (int i = 0; i < winner.size(); i++) {
-                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt", winner.get(i));
+                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt", winner.get(i));
                 }
                 fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",username.get(username.size() - 1));
                 try {
@@ -618,12 +621,12 @@ public class Game_Pos {
                 score_File.set(red_pos, String.valueOf(red_Score));
                 score_File.set(green_pos, String.valueOf(green_Score));
                 // save winner name
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\3 Player\\Player3.txt",username);
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt",winner);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Player3.txt",username);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt",winner);
                 winner.set( username.size() - 1  , username.get(username.size() - 1) );
                 try {
                     Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\SignUp\\Score.txt"));
-                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt"));
+                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt"));
                 }catch (IOException ex ){
                     ex.printStackTrace();
                 }
@@ -631,7 +634,7 @@ public class Game_Pos {
                     fileManeger1.FileWriter("src\\main\\resources\\Files\\SignUp\\Score.txt", score_File.get(i));
                 }
                 for (int i = 0; i < winner.size(); i++) {
-                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt", winner.get(i));
+                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt", winner.get(i));
                 }
                 fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",username.get(username.size() - 1));
                 try {
@@ -662,12 +665,12 @@ public class Game_Pos {
                 score_File.set(red_pos, String.valueOf(red_Score));
 
                 // save winner name
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\2 Player\\Player3.txt",username);
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt",winner);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Player3.txt",username);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt",winner);
                 winner.set( username.size() - 1 , username.get( username.size() - 1 ) );
                 try {
                     Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\SignUp\\Score.txt"));
-                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt"));
+                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt"));
                 }catch (IOException ex ){
                     ex.printStackTrace();
                 }
@@ -675,7 +678,7 @@ public class Game_Pos {
                     fileManeger1.FileWriter("src\\main\\resources\\Files\\SignUp\\Score.txt", score_File.get(i));
                 }
                 for (int i = 0; i < winner.size(); i++) {
-                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt", winner.get(i));
+                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt", winner.get(i));
                 }
                 fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",username.get(username.size() - 1));
                 try {
@@ -810,12 +813,12 @@ public class Game_Pos {
                 score_File.set(red_pos, String.valueOf(red_Score));
                 score_File.set(green_pos, String.valueOf(green_Score));
                 // save winner name
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\3 Player\\Player4.txt",username);
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt",winner);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Player4.txt",username);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt",winner);
                 winner.set( username.size() - 1  , username.get(username.size() - 1) );
                 try {
                     Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\SignUp\\Score.txt"));
-                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt"));
+                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt"));
                 }catch (IOException ex ){
                     ex.printStackTrace();
                 }
@@ -823,7 +826,7 @@ public class Game_Pos {
                     fileManeger1.FileWriter("src\\main\\resources\\Files\\SignUp\\Score.txt", score_File.get(i));
                 }
                 for (int i = 0; i < winner.size(); i++) {
-                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\3 Player\\Winner.txt", winner.get(i));
+                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt", winner.get(i));
                 }
                 fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",username.get(username.size() - 1));
                 try {
@@ -854,12 +857,12 @@ public class Game_Pos {
                 score_File.set(red_pos, String.valueOf(red_Score));
 
                 // save winner name
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\2 Player\\Player4.txt",username);
-                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt",winner);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Player4.txt",username);
+                fileManeger1.FileReader("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt",winner);
                 winner.set( username.size() - 1 , username.get( username.size() - 1 ) );
                 try {
                     Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\SignUp\\Score.txt"));
-                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt"));
+                    Files.deleteIfExists(Path.of("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt"));
                 }catch (IOException ex ){
                     ex.printStackTrace();
                 }
@@ -867,7 +870,7 @@ public class Game_Pos {
                     fileManeger1.FileWriter("src\\main\\resources\\Files\\SignUp\\Score.txt", score_File.get(i));
                 }
                 for (int i = 0; i < winner.size(); i++) {
-                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\2 Player\\Winner.txt", winner.get(i));
+                    fileManeger1.FileWriter("src\\main\\resources\\Files\\All Games\\4 Player\\Winner.txt", winner.get(i));
                 }
                 fileManeger2.FileWriter("src\\main\\resources\\Files\\All Games\\Last_Game\\Winner.txt",username.get(username.size() - 1));
                 try {
