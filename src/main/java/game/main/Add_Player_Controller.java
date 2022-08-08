@@ -49,10 +49,11 @@ public class Add_Player_Controller implements Initializable {
 
         Game_Pos gp = new Game_Pos();
         gp.delete_LastGame_Files();
-
-        fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\Username.txt", userName);
-        fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\Password.txt", password);
-        fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\GamesPlayed.txt", gamesPlayed);
+        if(Files.exists(Path.of("src\\main\\resources\\Files\\SignUp\\Username.txt"))) {
+            fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\Username.txt", userName);
+            fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\Password.txt", password);
+            fileManeger2.FileReader("src\\main\\resources\\Files\\SignUp\\GamesPlayed.txt", gamesPlayed);
+        }
 
         fileManeger2.FileReader("src\\main\\resources\\Files\\Number Of Players\\Number_Of_Players.txt", numberOfPlayer);
 

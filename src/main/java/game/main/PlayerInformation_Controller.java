@@ -8,6 +8,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
@@ -28,9 +30,10 @@ public class PlayerInformation_Controller implements Initializable {
     ArrayList<String> password = new ArrayList<>();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-        fileManeger1.FileReader("src\\main\\resources\\Files\\SignUp\\Username.txt",username);
-        fileManeger1.FileReader("src\\main\\resources\\Files\\SignUp\\Password.txt",password);
+        if(Files.exists(Path.of("src\\main\\resources\\Files\\SignUp\\Username.txt"))) {
+            fileManeger1.FileReader("src\\main\\resources\\Files\\SignUp\\Username.txt", username);
+            fileManeger1.FileReader("src\\main\\resources\\Files\\SignUp\\Password.txt", password);
+        }
     }
     public void login(){
         for ( i = 0; i < username.size(); i++) {
